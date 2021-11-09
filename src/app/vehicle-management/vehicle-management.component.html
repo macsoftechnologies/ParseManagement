@@ -1,0 +1,457 @@
+<div class="dashboardsection">
+  <div class="dash">
+    <div class="row spacewrap">
+      <div class="col-md-3">
+        <div class="subhead"><p>Vehicles</p></div>
+      </div>
+      <div class="col-md-6">
+        <div class="midhead">
+          <form class="form-inline mr-auto">
+            <div class="search-element">
+              <button class="btn" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                data-width="200"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="endhead">
+          <button type="button" class="add">+ADD VEHICLE</button>
+        </div>
+      </div>
+    </div>
+    <div class="row vehiclewrap">
+      <div class="col-md-2"></div>
+      <div class="col-md-5"></div>
+      <div class="col-md-5">
+        <div class="midhead">
+          <form class="form-inline mr-auto">
+            <div class="search-element">
+              <button class="btn" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search for vehicle"
+                aria-label="Search"
+                data-width="200"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="section" *ngIf="show">
+  <div class="row spacewrap">
+    <div class="col-12 col-sm-12 col-lg-4">
+      <div class="card">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-5">
+            <img
+              class="card-img-top"
+              src="../../assets/images/vehicles/honda-dio.jpg"
+              alt="Card image cap"
+            />
+          </div>
+          <div class="col-md-4 closewrap">
+            <div class="close"><i class="fas fa-times"></i></div>
+            <div class="edit"><i class="fas fa-edit"></i></div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <h5 class="card-title">Vehicle Name</h5>
+          <p class="card-text">Rs. 63,630</p>
+          <p class="charge">250W | 85KM/charge</p>
+          <a class="btn btn-primary" (click)="hide1()">View Offers</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-12 col-lg-4">
+      <div class="card">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-5">
+            <img
+              class="card-img-top"
+              src="../../assets/images/vehicles/honda-dio.jpg"
+              alt="Card image cap"
+            />
+          </div>
+          <div class="col-md-4 closewrap">
+            <div class="close"><i class="fas fa-times"></i></div>
+            <div class="edit"><i class="fas fa-edit"></i></div>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Vehicle Name</h5>
+          <p class="card-text">Rs. 63,630</p>
+          <p class="charge">250W | 85KM/charge</p>
+          <a href="#" class="btn btn-primary">View Offers</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-12 col-lg-4">
+      <div class="card">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-5">
+            <img
+              class="card-img-top"
+              src="../../assets/images/vehicles/honda-dio.jpg"
+              alt="Card image cap"
+            />
+          </div>
+          <div class="col-md-4 closewrap">
+            <div class="close"><i class="fas fa-times"></i></div>
+            <div class="edit"><i class="fas fa-edit"></i></div>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Vehicle Name</h5>
+          <p class="card-text">Rs. 63,630</p>
+          <p class="charge">250W | 85KM/charge</p>
+          <a href="#" class="btn btn-primary">View Offers</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row spacewrap">
+    <div class="col-12 col-sm-12 col-lg-4">
+      <div class="card">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-5">
+            <img
+              class="card-img-top"
+              src="../../assets/images/vehicles/honda-dio.jpg"
+              alt="Card image cap"
+            />
+          </div>
+          <div class="col-md-4 closewrap">
+            <div class="close"><i class="fas fa-times"></i></div>
+            <div class="edit"><i class="fas fa-edit"></i></div>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Vehicle Name</h5>
+          <p class="card-text">Rs. 63,630</p>
+          <p class="charge">250W | 85KM/charge</p>
+          <a href="#" class="btn btn-primary">View Offers</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-12 col-lg-4">
+      <div class="card">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-5">
+            <img
+              class="card-img-top"
+              src="../../assets/images/vehicles/honda-dio.jpg"
+              alt="Card image cap"
+            />
+          </div>
+          <div class="col-md-4 closewrap">
+            <div class="close"><i class="fas fa-times"></i></div>
+            <div class="edit"><i class="fas fa-edit"></i></div>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Vehicle Name</h5>
+          <p class="card-text">Rs. 63,630</p>
+          <p class="charge">250W | 85KM/charge</p>
+          <a href="#" class="btn btn-primary">View Offers</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-12 col-lg-4">
+      <div class="card">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-5">
+            <img
+              class="card-img-top"
+              src="../../assets/images/vehicles/honda-dio.jpg"
+              alt="Card image cap"
+            />
+          </div>
+          <div class="col-md-4 closewrap">
+            <div class="close"><i class="fas fa-times"></i></div>
+            <div class="edit"><i class="fas fa-edit"></i></div>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Vehicle Name</h5>
+          <p class="card-text">Rs. 63,630</p>
+          <p class="charge">250W | 85KM/charge</p>
+          <a href="#" class="btn btn-primary">View Offers</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row spacewrap">
+    <div class="col-12 col-sm-12 col-lg-4">
+      <div class="card">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-5">
+            <img
+              class="card-img-top"
+              src="../../assets/images/vehicles/honda-dio.jpg"
+              alt="Card image cap"
+            />
+          </div>
+          <div class="col-md-4 closewrap">
+            <div class="close"><i class="fas fa-times"></i></div>
+            <div class="edit"><i class="fas fa-edit"></i></div>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Vehicle Name</h5>
+          <p class="card-text">Rs. 63,630</p>
+          <p class="charge">250W | 85KM/charge</p>
+          <a href="#" class="btn btn-primary">View Offers</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-12 col-lg-4">
+      <div class="card">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-5">
+            <img
+              class="card-img-top"
+              src="../../assets/images/vehicles/honda-dio.jpg"
+              alt="Card image cap"
+            />
+          </div>
+          <div class="col-md-4 closewrap">
+            <div class="close"><i class="fas fa-times"></i></div>
+            <div class="edit"><i class="fas fa-edit"></i></div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <h5 class="card-title">Vehicle Name</h5>
+          <p class="card-text">Rs. 63,630</p>
+          <p class="charge">250W | 85KM/charge</p>
+          <a href="#" class="btn btn-primary">View Offers</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-12 col-lg-4">
+      <div class="card">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-5">
+            <img
+              class="card-img-top"
+              src="../../assets/images/vehicles/honda-dio.jpg"
+              alt="Card image cap"
+            />
+          </div>
+          <div class="col-md-4 closewrap">
+            <div class="close"><i class="fas fa-times"></i></div>
+            <div class="edit"><i class="fas fa-edit"></i></div>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Vehicle Name</h5>
+          <p class="card-text">Rs. 63,630</p>
+          <p class="charge">250W | 85KM/charge</p>
+          <a href="#" class="btn btn-primary">View Offers</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="vehiclemanagementdetails" *ngIf="hide">
+  <div class="row newofferwrap">
+    <div class="col-md-3">
+      <div class="subhead"><p>Vehicle Information</p></div>
+    </div>
+    <div class="col-md-6"></div>
+    <div class="col-md-3 toggle-right">
+      <div class="toggle">
+        <p>Active</p>
+        <i class="fas fa-toggle-on"></i>
+      </div>
+    </div>
+  </div>
+  <div class="row offerwrap">
+    <div class="col-md-4">
+      <div class="row">
+        <div class="col-md-10">
+          <div class="spcloffer">
+            <!-- <p>Offer Image</p> -->
+            <img src="../../assets/images/vehicles/honda-dio.jpg" />
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="offertitle">
+        <input type="text" placeholder="Name" class="form-control" />
+        <select name="states" class="custom-select mb-3" value="select">
+          <option value="Model" selected>Model</option>
+          <option value="a">a</option>
+          <option value="b">b</option>
+          <option value="c">c</option>
+          <option value="d">d</option>
+          <option value="e">e</option>
+        </select>
+        <div class="selectarrow">
+          <i
+            class="fa fa-angle-down"
+            aria-hidden="true"
+            aria-disabled="true"
+          ></i>
+        </div>
+        <br />
+        <br />
+        <select name="states" class="custom-select mb-3" value="select">
+          <option value="Model" selected>Vendor</option>
+          <option value="a">a</option>
+          <option value="b">b</option>
+          <option value="c">c</option>
+          <option value="d">d</option>
+          <option value="e">e</option>
+        </select>
+        <div class="selectarrow">
+          <i
+            class="fa fa-angle-down"
+            aria-hidden="true"
+            aria-disabled="true"
+          ></i>
+        </div>
+        <br />
+        <br />
+
+        <div class="row">
+          <div class="col-md-6 pricewrap">
+            <input type="text" value="63,640" class="form-control price" />
+            <p>Rs.&nbsp;&nbsp;-</p>
+          </div>
+          <div class="col-md-6 pricewrap">
+            <input type="text" value="0" class="form-control price" />
+            <p>Rs.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 pricewrap">
+            <input type="text" value="250" class="form-control price" />
+            <p>W</p>
+          </div>
+          <div class="col-md-6 pricewrap">
+            <input type="text" value="85" class="form-control price" />
+            <p>Km/charge</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="endhead"></div>
+    </div>
+  </div>
+  <div class="row colorwrap">
+    <div class="col-md-3">
+      <div class="subhead"><p>Colors</p></div>
+    </div>
+    <div class="col-md-6"></div>
+    <div class="col-md-3 toggle-right"></div>
+  </div>
+  <div class="row offerwrap">
+    <div class="col-md-4">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="black">
+            <i class="fas fa-check"></i>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="green1"><i class="fas fa-check"></i></div>
+        </div>
+        <div class="col-md-4">
+          <div class="green2"><i class="fas fa-check"></i></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="red"><i class="fas fa-check"></i></div>
+        </div>
+        <div class="col-md-4">
+          <div class="yellow"><i class="fas fa-check"></i></div>
+        </div>
+        <div class="col-md-4">
+          <div class="grey"><i class="fas fa-check"></i></div>
+        </div>
+      </div>
+      <div class="rgb">
+        <div class="row rgbwrap">
+          <div class="col-md-7">
+            <select name="states" class="custom-select mb-3" value="select">
+              <option value="Model" selected>RGB</option>
+              <option value="a">a</option>
+              <option value="b">b</option>
+              <option value="c">c</option>
+              <option value="d">d</option>
+              <option value="e">e</option>
+            </select>
+            <div class="selectarrow">
+              <i
+                class="fa fa-angle-down"
+                aria-hidden="true"
+                aria-disabled="true"
+              ></i>
+            </div>
+            <br />
+
+            <div class="rgbcolor">
+              <div class="redcolor">
+                <input type="text" class="form-control" value="#763FF0" />
+                <p>Red</p>
+              </div>
+              <div class="redcolor">
+                <input type="text" class="form-control" value="#763FF0" />
+                <p>Green</p>
+              </div>
+              <div class="redcolor">
+                <input type="text" class="form-control" value="#763FF0" />
+                <p>Blue</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="color">
+              <input type="text" class="form-control" value="#763FF0" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="offertitle">
+        <img src="../../assets/images/vehicles/img_colormap.gif" />
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="endhead"></div>
+    </div>
+  </div>
+</section>

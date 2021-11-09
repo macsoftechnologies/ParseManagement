@@ -1,0 +1,444 @@
+.dashboardsection {
+  .dash {
+    .spacewrap {
+      padding: 10px 20px;
+      .subhead {
+        p {
+          font-size: 17px;
+          font-weight: 500;
+          color: #53af94;
+          padding: 0px 0px 10px 2px;
+          margin: 0px;
+          display: inline-block;
+        }
+      }
+      .midhead {
+        .form-inline {
+          .search-element {
+            border-radius: 30px;
+            background-color: white;
+            border: 1px solid gainsboro;
+            width: 100%;
+          }
+          .form-control {
+            border: none;
+            padding: 5px;
+            width: 90%;
+            box-shadow: none;
+            outline: none;
+            font-size: 13px;
+          }
+          .btn {
+            font-size: 12px;
+          }
+        }
+      }
+      .endhead {
+        .add {
+          background: rgba(241, 41, 87, 0.83);
+          color: white;
+          padding: 5px 10px;
+          font-size: 14px;
+          border: 1px solid rgba(241, 41, 87, 0.83);
+          box-shadow: none;
+          outline: none;
+        }
+      }
+    }
+    .vehiclewrap {
+      background-color: rgba(0, 0, 0, 0.03);
+      padding: 10px;
+      .midhead {
+        .form-inline {
+          .search-element {
+            background-color: white;
+
+            width: 60%;
+          }
+          .form-control {
+            border: none;
+            padding: 5px;
+            width: 80%;
+            box-shadow: none;
+            outline: none;
+            font-size: 13px;
+            font-weight: 700;
+          }
+          .btn {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+.section {
+  padding: 10px 20px;
+  //   background-color: rgba(0, 0, 0, 0.03);
+  .spacewrap {
+    margin-top: 15px;
+    .card {
+      border-color: rgba(241, 41, 87, 0.83);
+      width: auto !important;
+      img {
+        width: 130px;
+        height: 130px;
+        margin: auto;
+        padding: 10px;
+      }
+      .closewrap {
+        display: flex;
+        justify-content: flex-end;
+        .close {
+          opacity: 1;
+          i {
+            padding: 10px;
+            font-size: 20px;
+            color: rgba(241, 41, 87, 0.83);
+          }
+        }
+        .edit {
+          padding: 7px;
+          i {
+          }
+        }
+      }
+      .card-header {
+        display: flex;
+        padding: 0.55rem 1.25rem;
+        justify-content: space-between;
+        background-color: white;
+        h4 {
+          font-size: 15px;
+          padding: 5px 0 0 0;
+        }
+        p {
+          color: rgba(241, 41, 87, 0.83);
+          margin-bottom: 0px;
+        }
+        select.form-control {
+          width: 90px;
+          font-size: 12px;
+          border: none;
+          background-color: transparent;
+        }
+      }
+      .card-body {
+        text-align: center;
+        a {
+          border-color: rgba(0, 0, 0, 0.125);
+          background: white;
+          color: red;
+          text-align: center;
+          box-shadow: 0 0px 3px 0 rgb(0 0 0 / 10%);
+        }
+        h5.card-title {
+          font-size: 14px;
+          margin-bottom: 0px;
+          margin-bottom: 5px;
+        }
+        p.card-text {
+          margin-bottom: 5px;
+          font-size: 16px;
+          font-weight: 500;
+        }
+        p.charge {
+          color: rgb(0 0 0 / 42%);
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+.vehiclemanagementdetails {
+  padding: 10px 20px;
+  .newofferwrap {
+    .subhead {
+      text-align: center;
+      padding-left: 17px;
+      p {
+        font-size: 19px;
+        font-weight: 500;
+        color: #266ace;
+        // padding: 0px 0px 10px 2px;
+        margin-bottom: 0px;
+        display: inline-block;
+        text-decoration: underline;
+      }
+    }
+    .toggle-right {
+      text-align: -webkit-center;
+      .toggle {
+        text-align: center;
+        padding: 7px;
+        background: #08050508;
+        width: 58px;
+        height: 50px;
+        color: #11d511;
+
+        i {
+          font-size: 20px;
+        }
+        p {
+          font-size: 10px;
+          margin-bottom: 0px;
+          padding-top: 3px;
+        }
+      }
+    }
+  }
+  .offerwrap {
+    padding: 0px;
+    .spcloffer {
+      border: 2px solid #f34d73;
+      text-align: center;
+      width: 100%;
+      height: 200px;
+      padding: 20px;
+      img {
+        // width: 100%;
+        // height: 100%;
+
+        width: 130px;
+        height: 130px;
+      }
+      p {
+        border: 2px solid #f34d73;
+        height: 218px;
+        text-align: center;
+        vertical-align: middle;
+        align-items: center;
+        padding: 94px 0;
+        color: #f34d73;
+        font-size: 14px;
+      }
+    }
+    .offertitle {
+      .form-control {
+        margin-bottom: 20px;
+        border-radius: 0px;
+        box-shadow: none;
+        outline: none;
+        font-size: 15px;
+      }
+      .btnsave {
+        background: #f34d73;
+        color: white;
+        padding: 5px 20px;
+        font-size: 14px;
+        border: 1px solid #f34d73;
+        box-shadow: none;
+        outline: none;
+        float: right;
+      }
+      textarea.form-control {
+        height: 100px;
+      }
+      .custom-select {
+        background: none !important;
+        width: 95%;
+        display: flex;
+        border-radius: 0px;
+        font-size: 15px;
+        position: absolute;
+        box-shadow: none;
+      }
+      .selectarrow {
+        position: relative;
+        padding: 8px 0px 0px 0px;
+        font-size: 16px;
+        color: #98b7d6;
+        width: 100%;
+        i {
+          position: absolute;
+          right: 0;
+          padding-right: 9px;
+          pointer-events: none;
+          padding-top: 2px;
+        }
+      }
+      .pricewrap {
+        display: flex;
+        input.form-control.price {
+          width: 62%;
+          margin-right: 10px;
+          font-weight: 500;
+        }
+        p {
+          padding-top: 5px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .colorwrap {
+    .subhead {
+      text-align: left;
+      padding-left: 42px;
+      p {
+        font-size: 19px;
+        font-weight: 500;
+        color: #266ace;
+        // padding: 0px 0px 10px 2px;
+        margin-bottom: 15px;
+        display: inline-block;
+        text-decoration: underline;
+      }
+    }
+  }
+  .offerwrap {
+    padding-left: 40px;
+    .black {
+      border: 1px solid black;
+      padding: 20px;
+      background: black;
+      border-radius: 13px 24px 13px 13px;
+      margin-bottom: 15px;
+      position: relative;
+      i {
+        position: absolute;
+        color: #53d704;
+        background: white;
+        right: 0;
+        top: 0;
+      }
+    }
+    .green1 {
+      border: 1px solid #4ab508b8;
+      padding: 20px;
+      background: #4ab508b8;
+      border-radius: 13px 24px 13px 13px;
+      margin-bottom: 15px;
+      position: relative;
+      i {
+        position: absolute;
+        color: #53d704;
+        background: white;
+        right: 0;
+        top: 0;
+      }
+    }
+
+    .green2 {
+      border: 1px solid #04b553;
+      padding: 20px;
+      background: #04b553;
+      border-radius: 13px 24px 13px 13px;
+      margin-bottom: 15px;
+      position: relative;
+      i {
+        position: absolute;
+        color: #53d704;
+        background: white;
+        right: 0;
+        top: 0;
+      }
+    }
+    .red {
+      border: 1px solid #ef3939;
+      padding: 20px;
+      background: #ef3939;
+      border-radius: 13px 24px 13px 13px;
+      margin-bottom: 15px;
+      position: relative;
+      i {
+        position: absolute;
+        color: #53d704;
+        background: white;
+        right: 0;
+        top: 0;
+      }
+    }
+    .yellow {
+      border: 1px solid #f7fb0cfa;
+      padding: 20px;
+      background: #f7fb0cfa;
+      border-radius: 13px 24px 13px 13px;
+      margin-bottom: 15px;
+      position: relative;
+      i {
+        position: absolute;
+        color: #53d704;
+        background: white;
+        right: 0;
+        top: 0;
+      }
+    }
+    .grey {
+      border: 1px solid #8a938e;
+      padding: 20px;
+      background: #8a938e;
+      border-radius: 13px 24px 13px 13px;
+      margin-bottom: 15px;
+      position: relative;
+      i {
+        position: absolute;
+        color: #53d704;
+        background: white;
+        right: 0;
+        top: 0;
+      }
+    }
+    .offertitle {
+      text-align: center;
+    }
+    .rgbwrap {
+      border: 1px solid #ced4da;
+      padding-top: 15px;
+
+      .custom-select {
+        background: none !important;
+        width: 59%;
+        display: flex;
+        border-radius: 0px;
+        font-size: 12px;
+        position: absolute;
+        box-shadow: none;
+        padding: 6px 12px 6px 12px;
+      }
+      .selectarrow {
+        position: relative;
+        padding: 8px 0px 0px 0px;
+        font-size: 14px;
+        color: #98b7d6;
+        width: 70%;
+        i {
+          position: absolute;
+          right: 0;
+          padding-right: 15px;
+          pointer-events: none;
+          padding-top: 2px;
+        }
+      }
+      .rgbcolor {
+        margin-top: 10px;
+        .redcolor {
+          display: flex;
+          p {
+            font-size: 12px;
+            padding: 7px;
+          }
+        }
+        .form-control {
+          font-size: 12px;
+          border-radius: 0px;
+          box-shadow: none;
+          outline: none;
+          margin-bottom: 10px;
+          width: 70%;
+        }
+      }
+      .color {
+        .form-control {
+          font-size: 12px;
+          border-radius: 0px;
+          box-shadow: none;
+          outline: none;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

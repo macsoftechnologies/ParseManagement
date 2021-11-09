@@ -7,6 +7,10 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { SidenavComponent } from './shared/sidenav/sidenav.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { VehicleManagementComponent } from './vehicle-management/vehicle-management.component';
+import { StockManagementComponent } from './stock-management/stock-management.component';
+import { LoanManagementComponent } from './loan-management/loan-management.component';
+import { OfferManagementComponent } from './offer-management/offer-management.component';
 
 @NgModule({
   declarations: [
@@ -14,13 +18,14 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     HeaderComponent,
     FooterComponent,
     SidenavComponent,
-    DashboardComponent
+    DashboardComponent,
+    VehicleManagementComponent,
+    StockManagementComponent,
+    LoanManagementComponent,
+    OfferManagementComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

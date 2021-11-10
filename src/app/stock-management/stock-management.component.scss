@@ -1,0 +1,167 @@
+.dashboardsection {
+  .dash {
+    .spacewrap {
+      padding: 10px 20px;
+      .subhead {
+        p {
+          font-size: 17px;
+          font-weight: 500;
+          color: #53af94;
+          padding: 0px 0px 10px 2px;
+          margin: 0px;
+          display: inline-block;
+        }
+      }
+      .midhead {
+        .form-inline {
+          .search-element {
+            border-radius: 30px;
+            background-color: white;
+            border: 1px solid gainsboro;
+            width: 100%;
+          }
+          .form-control {
+            border: none;
+            padding: 5px;
+            width: 90%;
+            box-shadow: none;
+            outline: none;
+            font-size: 13px;
+          }
+          .btn {
+            font-size: 12px;
+          }
+        }
+      }
+      .endhead {
+        .add {
+          background: rgba(241, 41, 87, 0.83);
+          color: white;
+          padding: 5px 10px;
+          font-size: 14px;
+          border: 1px solid rgba(241, 41, 87, 0.83);
+          box-shadow: none;
+          outline: none;
+        }
+      }
+    }
+    .vehiclewrap {
+      background-color: rgba(0, 0, 0, 0.03);
+      padding: 10px;
+      .midhead {
+        .form-inline {
+          .search-element {
+            background-color: white;
+
+            width: 60%;
+          }
+          .form-control {
+            border: none;
+            padding: 5px;
+            width: 80%;
+            box-shadow: none;
+            outline: none;
+            font-size: 13px;
+            font-weight: 700;
+          }
+          .btn {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+.section {
+  padding: 10px 20px;
+
+  .spacewrap {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    .border {
+      border: 1px solid #191b1c !important;
+    }
+    fieldset {
+      margin-bottom: 16px;
+      legend {
+        font-size: 16px;
+        font-weight: 500;
+      }
+      p {
+        text-align: center;
+        font-weight: 500;
+        font-size: 14px;
+      }
+    }
+    .exportbtn {
+      text-align: right;
+      .btn-primary {
+        padding: 3px 15px;
+        border: 1px solid #007bff;
+        background: #007bff;
+        outline: none;
+        box-shadow: none;
+      }
+    }
+    .custom-select {
+      background: none !important;
+      width: 50%;
+      display: flex;
+      border-radius: 0px;
+      font-size: 15px;
+      position: absolute;
+      box-shadow: none;
+      color: black;
+
+      border: 1px solid #191b1c !important;
+    }
+    .selectarrow {
+      position: relative;
+      padding: 8px 0px 0px 0px;
+      font-size: 16px;
+      color: black;
+      width: 53%;
+      i {
+        position: absolute;
+        right: 0;
+        padding-right: 9px;
+        pointer-events: none;
+        padding-top: 2px;
+      }
+    }
+    .leftimg {
+      img {
+        width: 100%;
+        height: 200px;
+        border: 2px solid black;
+      }
+    }
+    .righttext {
+      padding-bottom: 10px;
+      p {
+        margin-bottom: 5px;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+    .add1 {
+      button {
+        padding: 6px 25px;
+        border: 1px solid #007bff;
+        background: #007bff;
+        outline: none;
+        box-shadow: none;
+        margin: 10px 10px 0px 0px;
+      }
+    }
+    .add2 {
+      button {
+        padding: 6px 25px;
+        border: 1px solid #007bff;
+        background: #007bff;
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+}

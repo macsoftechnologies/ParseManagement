@@ -1,1 +1,291 @@
-<p>loan-management works!</p>
+<div class="dashboardsection">
+  <div class="dash">
+    <div class="row spacewrap">
+      <div class="col-md-3">
+        <div class="subhead"><p>Vehicles</p></div>
+      </div>
+      <div class="col-md-6">
+        <div class="midhead">
+          <form class="form-inline mr-auto">
+            <div class="search-element">
+              <button class="btn" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                data-width="200"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="endhead">
+          <button type="button" class="add">+ADD VEHICLE</button>
+        </div>
+      </div>
+    </div>
+    <div class="row vehiclewrap">
+      <div class="col-md-2"></div>
+      <div class="col-md-5"></div>
+      <div class="col-md-5">
+        <div class="midhead">
+          <form class="form-inline mr-auto">
+            <div class="search-element">
+              <button class="btn" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search for vehicle"
+                aria-label="Search"
+                data-width="200"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="section">
+  <div class="row spacewrap">
+    <div class="col-12 col-sm-12 col-lg-4">
+      <fieldset class="border p-2">
+        <legend class="w-auto">Status</legend>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="outofstock">
+              <p>Overdue</p>
+              <p>10</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="Lowstock">
+              <p>Due soon</p>
+              <p>4</p>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+    <div class="col-12 col-sm-12 col-lg-6">
+      <fieldset class="border p-2">
+        <legend class="w-auto">Report</legend>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="outofstock">
+              <p>Open</p>
+              <p>6</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="outofstock">
+              <p>Closed</p>
+              <p>2</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="outofstock">
+              <p>Pending</p>
+              <p>6</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="outofstock">
+              <p>Declined</p>
+              <p>6</p>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <!-- <div class="exportbtn">
+          <button type="button" class="btn-primary">Export</button>
+        </div> -->
+    </div>
+    <div class="col-12 col-sm-12 col-lg-2"></div>
+  </div>
+  <div class="row spacewrap">
+    <div class="col-12 col-sm-12 col-lg-4"></div>
+    <div class="col-12 col-sm-12 col-lg-4">
+      <div class="exportbtn">
+        <button type="button" class="btn-primary">Export</button>
+      </div>
+    </div>
+    <div class="col-12 col-sm-12 col-lg-4">
+      <select name="states" class="custom-select mb-3" value="select">
+        <option value="Out of stock" selected>Open/New</option>
+        <option value="a">Due soon</option>
+        <option value="b">Overdue</option>
+        <option value="a">Closed</option>
+        <option value="b">Pending</option>
+        <option value="b">Declined</option>
+      </select>
+      <div class="selectarrow">
+        <i class="fa fa-angle-down" aria-hidden="true" aria-disabled="true"></i>
+      </div>
+      <br />
+      <br />
+    </div>
+  </div>
+  <div class="row spacewrap">
+    <div class="col-12 col-sm-12 col-lg-6">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="leftimg">
+            <img src="../../assets/images/vehicles/epic.png" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="righttext">
+            <p>Customer Name</p>
+            <p>Model</p>
+            <p>Amount</p>
+            <p>Applied On</p>
+            <p>Approved On</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-12 col-lg-6">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="custname">
+            <p>CustName_Aadhar</p>
+            <p>CustName_PAN</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="actions">
+            <ul>
+              <li><i class="fas fa-download"></i></li>
+              <li><i class="fas fa-check"></i></li>
+              <li><i class="fas fa-times"></i></li>
+            </ul>
+          </div>
+          <br />
+          <div class="actions">
+            <ul>
+              <li><i class="fas fa-download"></i></li>
+              <li><i class="fas fa-check"></i></li>
+              <li><i class="fas fa-times"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="open">
+            <p class="red">Open/New</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row spacewrap">
+    <div class="col-12 col-sm-12 col-lg-6">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="leftimg">
+            <img src="../../assets/images/vehicles/epic.png" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="righttext">
+            <p>Customer Name</p>
+            <p>Model</p>
+            <p>Amount</p>
+            <p>Applied On</p>
+            <p>Approved On</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-12 col-lg-6">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="custname">
+            <p>CustName_Aadhar</p>
+            <p>CustName_PAN</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="actions">
+            <ul>
+              <li><i class="fas fa-download"></i></li>
+              <li><i class="fas fa-check"></i></li>
+              <li><i class="fas fa-times"></i></li>
+            </ul>
+          </div>
+          <br />
+          <div class="actions">
+            <ul>
+              <li><i class="fas fa-download"></i></li>
+              <li><i class="fas fa-check"></i></li>
+              <li><i class="fas fa-times"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="open">
+            <p class="orange">Pending</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row spacewrap">
+    <div class="col-12 col-sm-12 col-lg-6">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="leftimg">
+            <img src="../../assets/images/vehicles/epic.png" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="righttext">
+            <p>Customer Name</p>
+            <p>Model</p>
+            <p>Amount</p>
+            <p>Applied On</p>
+            <p>Approved On</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-12 col-lg-6">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="custname">
+            <p>CustName_Aadhar</p>
+            <p>CustName_PAN</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="actions">
+            <ul>
+              <li><i class="fas fa-download"></i></li>
+              <li><i class="fas fa-check"></i></li>
+              <li><i class="fas fa-times"></i></li>
+            </ul>
+          </div>
+          <br />
+          <div class="actions">
+            <ul>
+              <li><i class="fas fa-download"></i></li>
+              <li><i class="fas fa-check"></i></li>
+              <li><i class="fas fa-times"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="open">
+            <p class="green">Closed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

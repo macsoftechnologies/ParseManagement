@@ -1,1 +1,204 @@
-<p>stock-management works!</p>
+<div class="dashboardsection">
+  <div class="dash">
+    <div class="row spacewrap">
+      <div class="col-md-3">
+        <div class="subhead"><p>Vehicles</p></div>
+      </div>
+      <div class="col-md-6">
+        <div class="midhead">
+          <form class="form-inline mr-auto">
+            <div class="search-element">
+              <button class="btn" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                data-width="200"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="endhead">
+          <button type="button" class="add">+ADD VEHICLE</button>
+        </div>
+      </div>
+    </div>
+    <div class="row vehiclewrap">
+      <div class="col-md-2"></div>
+      <div class="col-md-5"></div>
+      <div class="col-md-5">
+        <div class="midhead">
+          <form class="form-inline mr-auto">
+            <div class="search-element">
+              <button class="btn" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search for vehicle"
+                aria-label="Search"
+                data-width="200"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="section">
+  <div class="row spacewrap">
+    <div class="col-12 col-sm-12 col-lg-4">
+      <fieldset class="border p-2">
+        <legend class="w-auto">Stock</legend>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="outofstock">
+              <p>Out of stock</p>
+              <p>2</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="Lowstock">
+              <p>Low stock</p>
+              <p>2</p>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+    <div class="col-12 col-sm-12 col-lg-4">
+      <fieldset class="border p-2">
+        <legend class="w-auto">Stock</legend>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="outofstock">
+              <p>Models</p>
+              <p>6</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="outofstock">
+              <p>106</p>
+              <p>2</p>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <!-- <div class="exportbtn">
+        <button type="button" class="btn-primary">Export</button>
+      </div> -->
+    </div>
+    <div class="col-12 col-sm-12 col-lg-4"></div>
+  </div>
+  <div class="row spacewrap">
+    <div class="col-12 col-sm-12 col-lg-4"></div>
+    <div class="col-12 col-sm-12 col-lg-4">
+      <div class="exportbtn">
+        <button type="button" class="btn-primary">Export</button>
+      </div>
+    </div>
+    <div class="col-12 col-sm-12 col-lg-4">
+      <select name="states" class="custom-select mb-3" value="select">
+        <option value="Out of stock" selected>Out of stock</option>
+        <option value="a">Low stock</option>
+        <option value="b">In stock</option>
+      </select>
+      <div class="selectarrow">
+        <i class="fa fa-angle-down" aria-hidden="true" aria-disabled="true"></i>
+      </div>
+      <br />
+      <br />
+    </div>
+  </div>
+  <div class="row spacewrap">
+    <div class="col-12 col-sm-12 col-lg-6">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="leftimg">
+            <img src="../../assets/images/vehicles/epic.png" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="righttext">
+            <p>Name</p>
+            <p>Model</p>
+            <p>Instock : 18</p>
+          </div>
+          <div class="add1">
+            <button type="button" class="btn-primary">0</button>
+            <button type="button" class="btn-primary">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-12 col-lg-6">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="leftimg">
+            <img src="../../assets/images/vehicles/epic.png" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="righttext">
+            <p>Name</p>
+            <p>Model</p>
+            <p>Out of stock : 0</p>
+          </div>
+          <div class="add1">
+            <button type="button" class="btn-primary">0</button>
+            <button type="button" class="btn-primary">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row spacewrap">
+    <div class="col-12 col-sm-12 col-lg-6">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="leftimg">
+            <img src="../../assets/images/vehicles/epic.png" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="righttext">
+            <p>Name</p>
+            <p>Model</p>
+            <p>Lowstock : 4 (5 is margin)</p>
+          </div>
+          <div class="add1">
+            <!-- <button type="button" class="btn-primary">0</button> -->
+            <button type="button" class="btn-primary">Add stock</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-12 col-lg-6">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="leftimg">
+            <img src="../../assets/images/vehicles/epic.png" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="righttext">
+            <p>Name</p>
+            <p>Model</p>
+            <p>Instock : 18</p>
+          </div>
+          <div class="add1">
+            <button type="button" class="btn-primary">0</button>
+            <button type="button" class="btn-primary">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

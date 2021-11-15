@@ -4,7 +4,7 @@
       <a href="index.html">
         <img src="../../../assets/images/logo/logo@1X.png" />
 
-        <span class="logo-name"> <small>Management</small></span>
+        <!-- <span class="logo-name"> <small>Management</small></span> -->
       </a>
     </div>
     <!-- <div class="sidebar-user">
@@ -18,42 +18,70 @@
       </div> -->
     <ul class="sidebar-menu">
       <!-- <li class="menu-header">Main</li> -->
-      <li class="dropdown active">
+      <li
+        class="dropdown"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
         <a class="nav-link" [routerLink]="['/']"
           ><i class="fas fa-desktop"></i><span>Dashboard</span></a
         >
       </li>
 
-      <li class="dropdown">
+      <li
+        class="dropdown"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: false }"
+      >
         <a [routerLink]="['/VehicleManagement']" class="nav-link has-dropdown"
           ><i class="fas fa-truck"></i><span>Vehicle Management</span></a
         >
       </li>
-      <li class="dropdown">
+      <li
+        class="dropdown"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: false }"
+      >
         <a [routerLink]="['/StockManagement']" class="nav-link has-dropdown"
           ><i class="fas fa-suitcase"></i><span>Stock Management</span></a
         >
       </li>
-      <li class="dropdown">
+      <li
+        class="dropdown"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: false }"
+      >
         <a [routerLink]="['/LoanManagement']" class="nav-link has-dropdown"
           ><i class="fas fa-suitcase"></i><span>Loan Management</span></a
         >
       </li>
-      <li class="dropdown">
+      <li
+        class="dropdown"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: false }"
+      >
         <a [routerLink]="['/OfferManagement']" class="nav-link has-dropdown"
           ><i class="fas fa-suitcase"></i><span>Offer Management</span></a
         >
       </li>
-      <li class="dropdown">
-        <a [routerLink]="['/VehicleManagement']" class="nav-link has-dropdown"
+      <!-- <li
+        class="dropdown"
+        routerLinkActive=""
+        [routerLinkActiveOptions]="{ exact: false }"
+      >
+        <a [routerLink]="['']" class="nav-link has-dropdown"
           ><i class="fas fa-suitcase"></i><span>Announcements</span></a
         >
       </li>
-      <li class="dropdown">
-        <a [routerLink]="['/VehicleManagement']" class="nav-link has-dropdown"
+      <li
+        class="dropdown"
+        routerLinkActive=""
+        [routerLinkActiveOptions]="{ exact: false }"
+      >
+        <a [routerLink]="['']" class="nav-link has-dropdown"
           ><i class="fas fa-suitcase"></i><span>Vochure Management</span></a
         >
-      </li>
+      </li> -->
     </ul>
   </aside>
 </div>

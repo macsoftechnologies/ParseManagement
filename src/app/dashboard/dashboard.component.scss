@@ -2,12 +2,13 @@
   .dash {
     .spacewrap {
       padding: 10px 20px;
+      border-bottom: 1px solid #8080802e;
       .subhead {
         p {
           font-size: 17px;
           font-weight: 500;
           color: #53af94;
-          padding: 0px 0px 10px 2px;
+          padding: 5px 0px 10px 2px;
           margin: 0px;
           display: inline-block;
         }
@@ -46,6 +47,18 @@
       }
     }
   }
+  .detailstab {
+    padding-left: 10px;
+    p {
+      color: #53af94;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 14px 30px;
+      margin-bottom: 0px;
+      border-bottom: 3px solid #53af94;
+      width: 110px;
+    }
+  }
 }
 .section {
   padding: 10px 20px;
@@ -74,6 +87,8 @@
           width: 90px;
           font-size: 12px;
           border: none;
+          box-shadow: none;
+          outline: none;
           background-color: transparent;
         }
       }

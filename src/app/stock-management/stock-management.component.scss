@@ -96,7 +96,7 @@
     .exportbtn {
       text-align: right;
       .btn-primary {
-        padding: 3px 15px;
+        padding: 6px 15px;
         border: 1px solid #007bff;
         background: #007bff;
         outline: none;
@@ -132,8 +132,9 @@
     .leftimg {
       img {
         width: 100%;
-        height: 200px;
+        height: 230px;
         border: 2px solid black;
+        padding: 50px;
       }
     }
     .righttext {
@@ -145,6 +146,7 @@
       }
     }
     .add1 {
+      display: flex;
       button {
         padding: 6px 25px;
         border: 1px solid #007bff;
@@ -152,6 +154,42 @@
         outline: none;
         box-shadow: none;
         margin: 10px 10px 0px 0px;
+      }
+      .cart-plus-minus {
+        // border: 1px solid #ccc;
+        display: flex;
+        width: 80px;
+        margin-right: 10px;
+        padding-top: 10px;
+        color: white;
+        .qtybutton {
+          background: #007bff none repeat scroll 0 0;
+          cursor: pointer;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 37px;
+          // float: left;
+          color: #fff;
+          float: left;
+          font-family: lato;
+          height: 40px;
+          text-align: center;
+          width: 30px;
+        }
+        input.cart-plus-minus-box {
+          color: #fff;
+          float: left;
+          font-family: lato;
+          height: 40px;
+          text-align: center;
+          width: 30px;
+          background-color: #007bff;
+          border: none;
+          outline: none;
+        }
+        .inc {
+          font-size: 16px;
+        }
       }
     }
     .add2 {

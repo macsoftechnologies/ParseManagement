@@ -58,9 +58,20 @@
         <div class="card-header">
           <h4>Vehicles</h4>
         </div>
-        <div class="card-body">
-          <div class="card-header">
-            <img src="../../assets/images/vehicles/graph.png" />
+        <div class="card-body inventory">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="outofstck">
+                <p style="color: #41cf41">35</p>
+                <h6>Saled</h6>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="lowstck">
+                <p style="color: orange">76</p>
+                <h6>Available</h6>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -70,9 +81,20 @@
         <div class="card-header">
           <h4>Inventory</h4>
         </div>
-        <div class="card-body">
-          <div class="card-header">
-            <img src="../../assets/images/vehicles/graph.png" />
+        <div class="card-body inventory">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="outofstck">
+                <p>2</p>
+                <h6>Out of Stock</h6>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="lowstck">
+                <p>2</p>
+                <h6>Out of Stock</h6>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -103,8 +125,19 @@
           <h4>Loan Status</h4>
         </div>
         <div class="card-body">
-          <div class="card-header">
-            <img src="../../assets/images/vehicles/graph.png" />
+          <div class="row">
+            <div class="col-md-6">
+              <div class="outofstck">
+                <p>2</p>
+                <h6>Overdue</h6>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="lowstck">
+                <p>2</p>
+                <h6>Duesoon</h6>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -115,8 +148,40 @@
           <h4>Open Loans</h4>
         </div>
         <div class="card-body">
-          <div class="card-header">
-            <img src="../../assets/images/vehicles/graph.png" />
+          <div class="row hr-line">
+            <div class="col-md-6">
+              <div class="openloans">
+                <p>Ryan</p>
+                <p>Loans - 30,000&nbsp;<i class="fas fa-rupee-sign"></i></p>
+                <p>09-oct-2021</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="checktimes">
+                <ul>
+                  <li><i class="fas fa-check" aria-hidden="true"></i></li>
+                  <li><i class="fas fa-times" aria-hidden="true"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="openloans">
+                <p>Cyte</p>
+                <p>Loans - 30,000&nbsp;<i class="fas fa-rupee-sign"></i></p>
+                <p>09-oct-2021</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="checktimes">
+                <ul>
+                  <li><i class="fas fa-check" aria-hidden="true"></i></li>
+                  <li><i class="fas fa-times" aria-hidden="true"></i></li>
+                </ul>
+                <button type="button" class="morebtn">more..</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -130,8 +195,18 @@
           <p>Close</p>
         </div>
         <div class="card-body">
-          <div class="card-header">
-            <img src="../../assets/images/vehicles/graph.png" />
+          <div class="row">
+            <div class="col-md-9">
+              <div class="openoffers">
+                <img src="assets/images/vehicles/openoffers.jpg" />
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="edit">
+                <i class="fas fa-pencil-alt"></i>
+                <p>Edit</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -142,21 +217,52 @@
           <h4>Need Approval</h4>
         </div>
         <div class="card-body">
-          <div class="card-header">
-            <img src="../../assets/images/vehicles/graph.png" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-sm-12 col-lg-4">
-      <div class="card">
-        <div class="card-header">
-          <h4>Open Loans</h4>
-        </div>
-        <div class="card-body">
-          <div class="card-header">
-            <img src="../../assets/images/vehicles/graph.png" />
-          </div>
+          <table>
+            <tr>
+              <td>Twin</td>
+              <td>
+                <ul>
+                  <li></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td><a>Aadhar</a></td>
+              <td>
+                <ul>
+                  <li><i class="fas fa-eye" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-share-alt" aria-hidden="true"></i></li>
+                  <li><i class="fas fa-download" aria-hidden="true"></i></li>
+                  <li><i class="fas fa-check" aria-hidden="true"></i></li>
+                  <li><i class="fas fa-times" aria-hidden="true"></i></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td><a>PAN</a></td>
+              <td>
+                <ul>
+                  <li><i class="fas fa-eye" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-share-alt" aria-hidden="true"></i></li>
+                  <li><i class="fas fa-download" aria-hidden="true"></i></li>
+                  <li><i class="fas fa-check" aria-hidden="true"></i></li>
+                  <li><i class="fas fa-times" aria-hidden="true"></i></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td><a>License</a></td>
+              <td>
+                <ul>
+                  <li><i class="fas fa-eye" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-share-alt" aria-hidden="true"></i></li>
+                  <li><i class="fas fa-download" aria-hidden="true"></i></li>
+                  <li><i class="fas fa-check" aria-hidden="true"></i></li>
+                  <li><i class="fas fa-times" aria-hidden="true"></i></li>
+                </ul>
+              </td>
+            </tr>
+          </table>
         </div>
       </div>
     </div>

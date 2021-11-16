@@ -8,12 +8,13 @@
           font-size: 17px;
           font-weight: 500;
           color: #53af94;
-          padding: 5px 0px 10px 2px;
+          padding: 5px 0px 10px 8px;
           margin: 0px;
           display: inline-block;
         }
       }
       .midhead {
+        padding-top: 3px;
         .form-inline {
           .search-element {
             border-radius: 30px;
@@ -35,6 +36,7 @@
         }
       }
       .endhead {
+        padding-top: 4px;
         .add {
           background: #e50707;
           color: white;
@@ -90,6 +92,159 @@
           box-shadow: none;
           outline: none;
           background-color: transparent;
+        }
+      }
+      .inventory {
+        padding: 65px 0;
+      }
+      .card-body {
+        height: 207px;
+        // padding: 40px 10px;
+        padding: 10px 20px;
+        .outofstck {
+          padding: 58px 0;
+          p {
+            text-align: center;
+            font-size: 30px;
+            color: red;
+            margin-bottom: 5px;
+          }
+          h6 {
+            text-align: center;
+            font-size: 14px;
+            font-weight: 400;
+          }
+        }
+        .lowstck {
+          padding: 58px 0;
+          p {
+            text-align: center;
+            font-size: 30px;
+            color: orange;
+            margin-bottom: 5px;
+          }
+          h6 {
+            text-align: center;
+            font-size: 16px;
+            font-weight: 400;
+          }
+        }
+        .approval {
+          ul {
+            padding-left: 0px;
+            li {
+              list-style-type: none;
+              button.btn {
+                font-size: 14px;
+                color: #007bff;
+                font-weight: 500;
+                text-decoration: underline;
+                // margin-bottom: 10px;
+                box-shadow: none;
+                outline: none;
+                border: none;
+              }
+              p {
+                padding-left: 10px;
+                margin-bottom: 0px;
+              }
+            }
+          }
+        }
+        .actions {
+          li {
+            list-style-type: none;
+            float: left;
+            padding: 0px 5px;
+          }
+        }
+        table {
+          margin: 30px 0px;
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+          td,
+          th {
+            // border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+          }
+          td {
+            // width: 100px;
+            padding: 4px 3px;
+            width: 30px;
+            ul {
+              li {
+                list-style-type: none;
+                float: left;
+                padding: 0 3px;
+              }
+            }
+            a {
+              color: #007bff;
+              text-decoration: underline;
+              font-size: 14px;
+              font-weight: 700;
+            }
+          }
+        }
+        .openoffers {
+          img {
+            width: 220px;
+            height: 187px;
+          }
+        }
+        .edit {
+          display: flex;
+          i {
+            font-size: 13px;
+            margin-top: 4px;
+            margin-right: 5px;
+            color: #9b9696fa;
+          }
+          p {
+            font-size: 14px;
+            color: #9b9696fa;
+          }
+        }
+        .openloans {
+          p {
+            margin-bottom: 0px;
+            font-weight: 600;
+          }
+        }
+        .hr-line {
+          border-bottom: 1px solid grey;
+          margin-bottom: 10px;
+          padding: 10px 0;
+        }
+        .checktimes {
+          ul {
+            li {
+              list-style-type: none;
+              float: left;
+              i {
+                padding-right: 15px;
+                font-size: 20px;
+              }
+              i.fa-check {
+                color: #41cf41;
+              }
+              i.fa-times {
+                color: red;
+              }
+            }
+          }
+          button {
+            outline: none;
+            border: none;
+            background: none;
+            color: #007bff;
+            float: right;
+            padding: 18px 10px;
+            text-decoration: underline;
+            box-shadow: none;
+          }
         }
       }
     }

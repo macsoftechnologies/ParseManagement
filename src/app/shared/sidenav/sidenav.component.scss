@@ -47,10 +47,11 @@
   .sidebar-brand {
     display: inline-block;
     width: 100%;
-    text-align: center;
+    // text-align: center;
     height: 55px;
     line-height: 70px;
     margin-top: -2px;
+    padding: 0px 20px;
     border-bottom: 1px solid #dadada;
     a {
       text-decoration: none;

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { ColorSketchModule } from 'ngx-color/sketch';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
@@ -24,7 +24,7 @@ import { OfferManagementComponent } from './offer-management/offer-management.co
     LoanManagementComponent,
     OfferManagementComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, ColorSketchModule],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -94,7 +94,7 @@
         }
         .badge {
           vertical-align: middle;
-          letter-spacing: 0.3px;
+          letter-spacing: 5.3px;
           font-size: 12px;
           margin-top: 22px;
         }
@@ -157,6 +157,9 @@
           color: white;
         }
       }
+    }
+    :last-child {
+      padding-right: 0px !important;
     }
     li.spacewrap {
       padding-right: 10px;

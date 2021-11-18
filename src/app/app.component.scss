@@ -1,10 +1,22 @@
 .main-content {
   display: flex;
+  width: 100%;
+  overflow-y: hidden;
   .left-side {
     width: 20%;
   }
 
   .right-side {
     width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .main-content {
+    .left-side {
+      width: 0% !important;
+    }
+    .right-side {
+      width: 100% !important;
+    }
   }
 }

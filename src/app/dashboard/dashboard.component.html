@@ -9,7 +9,7 @@
           <form class="form-inline mr-auto">
             <div class="search-element">
               <button class="btn" type="submit">
-                <i class="fas fa-search"></i>
+                <i class="fa fa-search"></i>
               </button>
               <input
                 class="form-control"
@@ -47,8 +47,21 @@
           </select>
         </div>
         <div class="card-body">
-          <div class="card-header">
-            <img src="../../assets/images/vehicles/graph.png" />
+          <div
+            class="bluebar"
+            style="display: block; width: 280px; height: 180px"
+          >
+            <canvas
+              baseChart
+              [datasets]="barChartData"
+              [labels]="mbarChartLabels"
+              [options]="barChartOptions"
+              [colors]="barChartColors"
+              [legend]="barChartLegend"
+              [chartType]="barChartType"
+              (chartHover)="chartHovered($event)"
+              (chartClick)="chartClicked($event)"
+            ></canvas>
           </div>
         </div>
       </div>
@@ -60,13 +73,13 @@
         </div>
         <div class="card-body inventory">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-6 col-md-6">
               <div class="outofstck">
                 <p style="color: #41cf41">35</p>
                 <h6>Saled</h6>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-6 col-md-6">
               <div class="lowstck">
                 <p style="color: orange">76</p>
                 <h6>Available</h6>
@@ -83,13 +96,13 @@
         </div>
         <div class="card-body inventory">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-6 col-md-6">
               <div class="outofstck">
                 <p>2</p>
                 <h6>Out of Stock</h6>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-6 col-md-6">
               <div class="lowstck">
                 <p>2</p>
                 <h6>Out of Stock</h6>
@@ -113,8 +126,21 @@
           </select>
         </div>
         <div class="card-body">
-          <div class="card-header">
-            <img src="../../assets/images/vehicles/graph.png" />
+          <div
+            class="redbar"
+            style="display: block; width: 280px; height: 180px"
+          >
+            <canvas
+              baseChart
+              [datasets]="barChartData2"
+              [labels]="mbarChartLabels"
+              [options]="barChartOptions"
+              [colors]="barChartColors2"
+              [legend]="barChartLegend"
+              [chartType]="barChartType"
+              (chartHover)="chartHovered($event)"
+              (chartClick)="chartClicked($event)"
+            ></canvas>
           </div>
         </div>
       </div>
@@ -126,13 +152,13 @@
         </div>
         <div class="card-body">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-6 col-md-6">
               <div class="outofstck">
                 <p>2</p>
                 <h6>Overdue</h6>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-6 col-md-6">
               <div class="lowstck">
                 <p>2</p>
                 <h6>Duesoon</h6>
@@ -149,35 +175,35 @@
         </div>
         <div class="card-body">
           <div class="row hr-line">
-            <div class="col-md-6">
+            <div class="col-6 col-md-6">
               <div class="openloans">
                 <p>Ryan</p>
-                <p>Loans - 30,000&nbsp;<i class="fas fa-rupee-sign"></i></p>
+                <p>Loans - 30,000&nbsp;<i class="fa fa-rupee-sign"></i></p>
                 <p>09-oct-2021</p>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-6 col-md-6">
               <div class="checktimes">
                 <ul>
-                  <li><i class="fas fa-check" aria-hidden="true"></i></li>
-                  <li><i class="fas fa-times" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-times" aria-hidden="true"></i></li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-6 col-md-6">
               <div class="openloans">
                 <p>Cyte</p>
-                <p>Loans - 30,000&nbsp;<i class="fas fa-rupee-sign"></i></p>
+                <p>Loans - 30,000&nbsp;<i class="fa fa-rupee-sign"></i></p>
                 <p>09-oct-2021</p>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-6 col-md-6">
               <div class="checktimes">
                 <ul>
-                  <li><i class="fas fa-check" aria-hidden="true"></i></li>
-                  <li><i class="fas fa-times" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-times" aria-hidden="true"></i></li>
                 </ul>
                 <button type="button" class="morebtn">more..</button>
               </div>
@@ -196,14 +222,14 @@
         </div>
         <div class="card-body">
           <div class="row">
-            <div class="col-md-9">
+            <div class="col-9 col-md-9">
               <div class="openoffers">
                 <img src="assets/images/vehicles/openoffers.jpg" />
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-3 col-md-3">
               <div class="edit">
-                <i class="fas fa-pencil-alt"></i>
+                <i class="fa fa-pencil-alt"></i>
                 <p>Edit</p>
               </div>
             </div>
@@ -230,11 +256,11 @@
               <td><a>Aadhar</a></td>
               <td>
                 <ul>
-                  <li><i class="fas fa-eye" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-eye" aria-hidden="true"></i></li>
                   <li><i class="fa fa-share-alt" aria-hidden="true"></i></li>
-                  <li><i class="fas fa-download" aria-hidden="true"></i></li>
-                  <li><i class="fas fa-check" aria-hidden="true"></i></li>
-                  <li><i class="fas fa-times" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-download" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-times" aria-hidden="true"></i></li>
                 </ul>
               </td>
             </tr>
@@ -242,11 +268,11 @@
               <td><a>PAN</a></td>
               <td>
                 <ul>
-                  <li><i class="fas fa-eye" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-eye" aria-hidden="true"></i></li>
                   <li><i class="fa fa-share-alt" aria-hidden="true"></i></li>
-                  <li><i class="fas fa-download" aria-hidden="true"></i></li>
-                  <li><i class="fas fa-check" aria-hidden="true"></i></li>
-                  <li><i class="fas fa-times" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-download" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-times" aria-hidden="true"></i></li>
                 </ul>
               </td>
             </tr>
@@ -254,11 +280,11 @@
               <td><a>License</a></td>
               <td>
                 <ul>
-                  <li><i class="fas fa-eye" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-eye" aria-hidden="true"></i></li>
                   <li><i class="fa fa-share-alt" aria-hidden="true"></i></li>
-                  <li><i class="fas fa-download" aria-hidden="true"></i></li>
-                  <li><i class="fas fa-check" aria-hidden="true"></i></li>
-                  <li><i class="fas fa-times" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-download" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i></li>
+                  <li><i class="fa fa-times" aria-hidden="true"></i></li>
                 </ul>
               </td>
             </tr>

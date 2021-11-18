@@ -68,6 +68,10 @@
   .spacewrap {
     margin-top: 15px;
     .card {
+      .chartjs-render-monitor {
+        width: 280px;
+        height: 180px !important;
+      }
       .card-header {
         display: flex;
         padding: 0.55rem 1.25rem;
@@ -86,7 +90,7 @@
           margin-bottom: 0px;
         }
         select.form-control {
-          width: 90px;
+          width: 95px;
           font-size: 12px;
           border: none;
           box-shadow: none;
@@ -111,7 +115,7 @@
           }
           h6 {
             text-align: center;
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 400;
           }
         }
@@ -185,6 +189,7 @@
               text-decoration: underline;
               font-size: 14px;
               font-weight: 700;
+              cursor: pointer;
             }
           }
         }
@@ -196,6 +201,7 @@
         }
         .edit {
           display: flex;
+          float: right;
           i {
             font-size: 13px;
             margin-top: 4px;
@@ -211,6 +217,7 @@
           p {
             margin-bottom: 0px;
             font-weight: 600;
+            font-size: 15px;
           }
         }
         .hr-line {
@@ -247,6 +254,13 @@
           }
         }
       }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .section {
+    .card {
+      margin-bottom: 15px;
     }
   }
 }

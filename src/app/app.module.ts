@@ -11,6 +11,7 @@ import { VehicleManagementComponent } from './vehicle-management/vehicle-managem
 import { StockManagementComponent } from './stock-management/stock-management.component';
 import { LoanManagementComponent } from './loan-management/loan-management.component';
 import { OfferManagementComponent } from './offer-management/offer-management.component';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { OfferManagementComponent } from './offer-management/offer-management.co
     LoanManagementComponent,
     OfferManagementComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, ColorSketchModule],
+  imports: [BrowserModule, AppRoutingModule, ColorSketchModule, ChartsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

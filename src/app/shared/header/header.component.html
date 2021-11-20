@@ -3,29 +3,14 @@
     <ul class="navbar-nav mr-3">
       <li>
         <a
-          href="#"
           data-toggle="sidebar"
-          class="nav-link nav-link-lg collapse-btn"
+          class="nav-link nav-link-lg collapse-btn menu-icon"
+          (click)="showMenu()"
         >
-          <i class="fa fa-bars"></i
+          <i class="fa fa-bars open-icon"></i
         ></a>
       </li>
-      <li>
-        <!-- <form class="form-inline mr-auto">
-          <div class="search-element">
-            <input
-              class="form-control"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-              data-width="200"
-            />
-            <button class="btn" type="submit">
-              <i class="fas fa-search"></i>
-            </button>
-          </div>
-        </form> -->
-      </li>
+      <li></li>
     </ul>
   </div>
   <ul class="navbar-nav navbar-right">
@@ -37,51 +22,6 @@
         ><i class="fa fa-bell"></i>
         <span class="badge headerBadge2"> 3 </span>
       </a>
-      <!--<div class="dropdown-menu dropdown-list dropdown-menu-right pullDown">
-      <div class="dropdown-header">
-        Notifications
-        <div class="float-right">
-          <a href="#">Mark All As Read</a>
-        </div>
-      </div>
-      <div class="dropdown-list-content dropdown-list-icons">
-        <a href="#" class="dropdown-item dropdown-item-unread"> <span
-            class="dropdown-item-icon bg-primary text-white"> <i class="fas
-                                        fa-code"></i>
-          </span> <span class="dropdown-item-desc"> Template update is
-            available now! <span class="time">2 Min
-              Ago</span>
-          </span>
-        </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-icon bg-info text-white"> <i class="far
-                                        fa-user"></i>
-          </span> <span class="dropdown-item-desc"> <b>You</b> and <b>Dedik
-              Sugiharto</b> are now friends <span class="time">10 Hours
-              Ago</span>
-          </span>
-        </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-icon bg-success text-white"> <i
-              class="fas
-                                        fa-check"></i>
-          </span> <span class="dropdown-item-desc"> <b>Kusnaedi</b> has
-            moved task <b>Fix bug header</b> to <b>Done</b> <span class="time">12
-              Hours
-              Ago</span>
-          </span>
-        </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-icon bg-danger text-white"> <i
-              class="fas fa-exclamation-triangle"></i>
-          </span> <span class="dropdown-item-desc"> Low disk space. Let's
-            clean it! <span class="time">17 Hours Ago</span>
-          </span>
-        </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-icon bg-info text-white"> <i class="fas
-                                        fa-bell"></i>
-          </span> <span class="dropdown-item-desc"> Welcome to InTrack
-            template! <span class="time">Yesterday</span>
-          </span>
-        </a>
-      </div>
-      <div class="dropdown-footer text-center">
-        <a href="#">View All <i class="fas fa-chevron-right"></i></a>
-      </div>
-    </div>-->
     </li>
     <li class="dropdown dropdown-list-toggle">
       <a
@@ -91,62 +31,126 @@
         ><i class="fa fa-envelope"></i>
         <span class="badge headerBadge1"> 6 </span>
       </a>
-      <!--<div class="dropdown-menu dropdown-list dropdown-menu-right pullDown">
-        <div class="dropdown-header">
-          Messages
-          <div class="float-right">
-            <a href="#">Mark All As Read</a>
-          </div>
-        </div>
-        <div class="dropdown-list-content dropdown-list-message">
-          <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar
-                                      text-white"> <img alt="image" src="assets/img/users/user-1.png" class="rounded-circle">
-            </span> <span class="dropdown-item-desc"> <span class="message-user">John
-                Deo</span>
-              <span class="time messege-text">Please check your mail !!</span>
-              <span class="time">2 Min Ago</span>
-            </span>
-          </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
-              <img alt="image" src="assets/img/users/user-2.png" class="rounded-circle">
-            </span> <span class="dropdown-item-desc"> <span class="message-user">Sarah
-                Smith</span> <span class="time messege-text">Request for leave
-                application</span>
-              <span class="time">5 Min Ago</span>
-            </span>
-          </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
-              <img alt="image" src="assets/img/users/user-5.png" class="rounded-circle">
-            </span> <span class="dropdown-item-desc"> <span class="message-user">Jacob
-                Ryan</span> <span class="time messege-text">Your payment invoice is
-                generated.</span> <span class="time">12 Min Ago</span>
-            </span>
-          </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
-              <img alt="image" src="assets/img/users/user-4.png" class="rounded-circle">
-            </span> <span class="dropdown-item-desc"> <span class="message-user">Lina
-                Smith</span> <span class="time messege-text">hii John, I have upload
-                doc
-                related to task.</span> <span class="time">30
-                Min Ago</span>
-            </span>
-          </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
-              <img alt="image" src="assets/img/users/user-3.png" class="rounded-circle">
-            </span> <span class="dropdown-item-desc"> <span class="message-user">Jalpa
-                Joshi</span> <span class="time messege-text">Please do as specify.
-                Let me
-                know if you have any query.</span> <span class="time">1
-                Days Ago</span>
-            </span>
-          </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
-              <img alt="image" src="assets/img/users/user-2.png" class="rounded-circle">
-            </span> <span class="dropdown-item-desc"> <span class="message-user">Sarah
-                Smith</span> <span class="time messege-text">Client Requirements</span>
-              <span class="time">2 Days Ago</span>
-            </span>
-          </a>
-        </div>
-        <div class="dropdown-footer text-center">
-          <a href="#">View All <i class="fas fa-chevron-right"></i></a>
-        </div>
-      </div>-->
+    </li>
+
+    <li class="dropdown spacewrap">
+      <a
+        href="#"
+        data-toggle="dropdown"
+        class="nav-linkk nav-link-lg nav-link-user"
+      >
+        <img
+          alt="image"
+          src="assets/images/vehicles/user.png"
+          class="user-img-radious-style"
+        />
+        <ul class="userblock">
+          <li><p>User name</p></li>
+          <li><p class="surname">name.surname@gmail.com</p></li>
+        </ul>
+      </a>
+
+      <!-- <p>User name</p>
+        <br />
+        <p>name.surname@gmail.com</p> -->
+      <!-- <span class="d-sm-none d-lg-inline-block"></span
+      ></a> -->
+
+      <div class="dropdown-menu dropdown-menu-right pullDown">
+        <div class="dropdown-title">Hello UserName</div>
+        <a href="#" class="dropdown-item has-icon">
+          <i class="far fa-user"></i> name.surname@gmail.com
+        </a>
+        <a href="auth-login.html" class="dropdown-item has-icon text-danger">
+          <i class="fas fa-sign-out-alt"></i>
+          Logout
+        </a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="auth-login.html" class="has-icon text-danger">
+        <i class="fa fa-sign-out" aria-hidden="true"></i>
+        Logout
+      </a>
+    </li>
+  </ul>
+  <!-- <div class="responsivebar">
+    <ul class="navbar-nav navbar-right">
+      <li class="dropdown dropdown-list-toggle">
+        <a
+          href="#"
+          data-toggle="dropdown"
+          class="nav-linkk notification-toggle nav-link-lg"
+          ><i class="fa fa-bell"></i>
+          <span class="badge headerBadge2"> 3 </span>
+        </a>
+      </li>
+      <li class="dropdown dropdown-list-toggle">
+        <a
+          href="#"
+          data-toggle="dropdown"
+          class="nav-linkk nav-link-lg message-toggle"
+          ><i class="fa fa-envelope"></i>
+          <span class="badge headerBadge1"> 6 </span>
+        </a>
+      </li>
+
+      <li class="dropdown spacewrap">
+        <a
+          href="#"
+          data-toggle="dropdown"
+          class="nav-linkk nav-link-lg nav-link-user"
+        >
+          <img
+            alt="image"
+            src="assets/images/vehicles/user.png"
+            class="user-img-radious-style"
+          />
+        </a>
+      </li>
+      <li class="dropdown">
+        <a href="auth-login.html" class="has-icon text-danger">
+          <i class="fa fa-sign-out" aria-hidden="true"></i>
+          Logout
+        </a>
+      </li>
+    </ul>
+  </div> -->
+</nav>
+
+<!-- <section class="responsive-header">
+  <div class="form-inline mr-auto">
+    <ul class="navbar-nav mr-3">
+      <li>
+        <a
+          href="#"
+          data-toggle="sidebar"
+          class="nav-link nav-link-lg collapse-btn"
+        >
+          <i class="fa fa-bars"></i
+        ></a>
+      </li>
+      <li></li>
+    </ul>
+  </div>
+  <ul class="navbar-nav navbar-right">
+    <li class="dropdown dropdown-list-toggle">
+      <a
+        href="#"
+        data-toggle="dropdown"
+        class="nav-linkk notification-toggle nav-link-lg"
+        ><i class="fa fa-bell"></i>
+        <span class="badge headerBadge2"> 3 </span>
+      </a>
+    </li>
+    <li class="dropdown dropdown-list-toggle">
+      <a
+        href="#"
+        data-toggle="dropdown"
+        class="nav-linkk nav-link-lg message-toggle"
+        ><i class="fa fa-envelope"></i>
+        <span class="badge headerBadge1"> 6 </span>
+      </a>
     </li>
 
     <li class="dropdown spacewrap">
@@ -165,23 +169,6 @@
           <li><p class="surname">name.surname@gmail.com</p></li>
         </ul>
       </a>
-
-      <!-- <p>User name</p>
-        <br />
-        <p>name.surname@gmail.com</p> -->
-      <!-- <span class="d-sm-none d-lg-inline-block"></span
-      ></a> -->
-
-      <!-- <div class="dropdown-menu dropdown-menu-right pullDown">
-        <div class="dropdown-title">Hello UserName</div>
-        <a href="#" class="dropdown-item has-icon">
-          <i class="far fa-user"></i> Profile
-        </a>
-        <a href="auth-login.html" class="dropdown-item has-icon text-danger">
-          <i class="fas fa-sign-out-alt"></i>
-          Logout
-        </a>
-      </div> -->
     </li>
     <li class="dropdown">
       <a href="auth-login.html" class="has-icon text-danger">
@@ -190,4 +177,64 @@
       </a>
     </li>
   </ul>
-</nav>
+</section> -->
+<div class="main-sidebar sidebar-style-2 menu open-menu">
+  <aside id="sidebar-wrapper">
+    <div class="sidebar-brand">
+      <a href="index.html">
+        <img src="assets/images/logo/logo@1X.png" />
+      </a>
+    </div>
+
+    <ul class="sidebar-menu">
+      <li
+        class="dropdown"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <a class="nav-link" [routerLink]="['/']"
+          ><i class="fa fa-desktop"></i><span>Dashboard</span></a
+        >
+      </li>
+
+      <li
+        class="dropdown"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: false }"
+      >
+        <a [routerLink]="['/VehicleManagement']" class="nav-link has-dropdown"
+          ><i class="fa fa-truck"></i><span>Vehicle Management</span></a
+        >
+      </li>
+      <li
+        class="dropdown"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: false }"
+      >
+        <a [routerLink]="['/StockManagement']" class="nav-link has-dropdown"
+          ><i class="fa fa-tasks" aria-hidden="true"></i
+          ><span>Stock Management</span></a
+        >
+      </li>
+      <li
+        class="dropdown"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: false }"
+      >
+        <a [routerLink]="['/LoanManagement']" class="nav-link has-dropdown"
+          ><i class="fa fa-money" aria-hidden="true"></i
+          ><span>Loan Management</span></a
+        >
+      </li>
+      <li
+        class="dropdown"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: false }"
+      >
+        <a [routerLink]="['/OfferManagement']" class="nav-link has-dropdown"
+          ><i class="fa fa-suitcase"></i><span>Offer Management</span></a
+        >
+      </li>
+    </ul>
+  </aside>
+</div>

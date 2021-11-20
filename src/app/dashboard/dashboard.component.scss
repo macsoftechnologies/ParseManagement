@@ -106,7 +106,7 @@
         // padding: 40px 10px;
         padding: 10px 20px;
         .outofstck {
-          padding: 58px 0;
+          padding: 55px 0;
           p {
             text-align: center;
             font-size: 30px;
@@ -120,7 +120,7 @@
           }
         }
         .lowstck {
-          padding: 58px 0;
+          padding: 55px 0;
           p {
             text-align: center;
             font-size: 30px;
@@ -261,6 +261,99 @@
   .section {
     .card {
       margin-bottom: 15px;
+      .card-body {
+        .bluebar {
+          width: 100% !important;
+        }
+        .redbar {
+          width: 100% !important;
+        }
+      }
+    }
+    .spacewrap {
+      margin-top: 0px;
+      .card {
+        .card-body {
+          .openloans {
+            p {
+              font-size: 14px;
+            }
+          }
+          .checktimes {
+            button.morebtn {
+              padding-top: 0px;
+              padding-bottom: 0px;
+            }
+          }
+          .openoffers {
+            img {
+              width: 170px;
+              height: 187px;
+            }
+          }
+          table {
+            td {
+              width: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+  .dashboardsection {
+    .dash {
+      .spacewrap {
+        .midhead {
+          .form-inline {
+            .form-control {
+              width: auto;
+            }
+          }
+        }
+        .endhead {
+          float: right;
+          .add {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboardsection {
+    .dash {
+      .spacewrap {
+        .midhead {
+          display: none;
+        }
+        .endhead {
+          float: right;
+          .add {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  .section {
+    .spacewrap {
+      .card {
+        .card-body {
+          .openoffers {
+            img {
+              width: 100%;
+              height: 187px;
+            }
+          }
+          table {
+            td {
+              width: 30px;
+            }
+          }
+        }
+      }
     }
   }
 }

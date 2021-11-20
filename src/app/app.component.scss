@@ -14,9 +14,11 @@
   .main-content {
     .left-side {
       width: 0% !important;
+      display: none;
     }
     .right-side {
       width: 100% !important;
+      display: block;
     }
   }
 }

@@ -58,7 +58,7 @@
         font-size: 17px;
         font-weight: 500;
         color: #266ace;
-        padding: 0px 0px 10px 2px;
+        padding: 5px 0px 10px 2px;
         margin: 0px;
         display: inline-block;
       }
@@ -284,6 +284,23 @@
       textarea.form-control {
         height: 100px;
       }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .section {
+    .offerwrap {
+      .endhead {
+        text-align: end;
+      }
+    }
+    .spacewrap {
+      .card {
+        margin-bottom: 15px;
+      }
+    }
+    .hr-line {
+      margin: 10px 0;
     }
   }
 }

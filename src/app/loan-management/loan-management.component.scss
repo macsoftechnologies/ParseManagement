@@ -147,11 +147,12 @@
     }
     .custname {
       button.btn {
+        padding-top: 0px;
         font-size: 14px;
         color: #007bff;
         font-weight: 500;
         text-decoration: underline;
-        margin-bottom: 22px;
+        margin-bottom: 15px;
         box-shadow: none;
         outline: none;
         border: none;
@@ -165,7 +166,7 @@
       }
     }
     .actions {
-      padding-top: 5px;
+      padding-top: 1px;
       ul {
         li {
           list-style-type: none;
@@ -210,6 +211,51 @@
         box-shadow: none;
       }
     }
+    .table td,
+    .table th {
+      border-top: 1px solid transparent !important;
+    }
+    .table-responsive {
+      .table {
+        vertical-align: middle !important;
+        td {
+          border-top: 1px solid transparent !important;
+        }
+        // thead {
+        //   tr {
+        //     background: #323c8d;
+        //     color: white;
+        //     th {
+        //       font-size: 11px;
+        //       text-align: center;
+        //       border-right: 1px solid transparent;
+        //     }
+        //   }
+        // }
+        tbody {
+          tr {
+            td.namedes {
+              width: 30%;
+            }
+
+            td.acti {
+              text-align: center;
+              width: 20%;
+            }
+            td.produ {
+              text-align: center;
+              width: 20% !important;
+            }
+            td.icons {
+              width: 20%;
+            }
+            td.unit {
+              width: 10%;
+            }
+          }
+        }
+      }
+    }
   }
 }
 #aadhar {
@@ -227,6 +273,48 @@
     img {
       width: 350px;
       height: 100%;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .section {
+    .spacewrap {
+      .exportbtn {
+        .btn-primary {
+          width: 100%;
+        }
+      }
+      .custom-select {
+        width: 91%;
+      }
+      .selectarrow {
+        width: 96%;
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .section {
+    .spacewrap {
+      margin-top: 0px;
+      margin-bottom: 10px;
+      .exportbtn {
+        .btn-primary {
+          width: 100%;
+        }
+      }
+      .custom-select {
+        width: 86%;
+      }
+      .selectarrow {
+        width: 96%;
+      }
+      .leftimg {
+        img {
+          height: 80px;
+          width: auto;
+        }
+      }
     }
   }
 }

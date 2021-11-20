@@ -80,6 +80,7 @@
     .card {
       border-color: rgba(241, 41, 87, 0.83);
       width: auto !important;
+      margin-bottom: 15px;
       img {
         width: 130px;
         height: 130px;
@@ -98,8 +99,9 @@
           }
         }
         .edit {
-          padding: 7px;
+          // padding: 7px;
           i {
+            padding: 13px 10px;
           }
         }
         .eye {
@@ -158,14 +160,17 @@
 }
 .vehiclemanagementdetails {
   padding: 10px 20px;
+
   .newofferwrap {
+    margin-bottom: 15px;
     .subhead {
-      text-align: center;
-      padding-left: 17px;
+      text-align: left;
+      // padding-left: 17px;
       p {
         font-size: 19px;
         font-weight: 500;
         color: #266ace;
+        padding: 20px 0px;
         // padding: 0px 0px 10px 2px;
         margin-bottom: 0px;
         display: inline-block;
@@ -229,7 +234,7 @@
     }
   }
   .offerwrap {
-    padding: 0px;
+    // padding: 10px 20px;
     .spcloffer {
       border: 2px solid #f34d73;
       text-align: center;
@@ -319,7 +324,7 @@
   .colorwrap {
     .subhead {
       text-align: left;
-      padding-left: 42px;
+      // padding-left: 42px;
       p {
         font-size: 19px;
         font-weight: 500;
@@ -332,7 +337,7 @@
     }
   }
   .offerwrap {
-    padding-left: 40px;
+    // padding-left: 40px;
     .black {
       border: 1px solid black;
       padding: 20px;
@@ -414,7 +419,7 @@
       padding: 20px;
       background: #8a938e;
       border-radius: 13px 24px 13px 13px;
-      margin-bottom: 15px;
+      margin-bottom: 30px;
       position: relative;
       i {
         position: absolute;
@@ -426,60 +431,208 @@
     }
     .offertitle {
       text-align: center;
+      margin-bottom: 30px;
     }
-    .rgbwrap {
+    .rgb {
       border: 1px solid #ced4da;
-      padding-top: 15px;
+      margin-bottom: 30px;
+      .rgbwrap {
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
 
-      .custom-select {
-        background: none !important;
-        width: 59%;
-        display: flex;
-        border-radius: 0px;
-        font-size: 12px;
-        position: absolute;
-        box-shadow: none;
-        padding: 6px 12px 6px 12px;
-      }
-      .selectarrow {
-        position: relative;
-        padding: 8px 0px 0px 0px;
-        font-size: 14px;
-        color: #98b7d6;
-        width: 70%;
-        i {
-          position: absolute;
-          right: 0;
-          padding-right: 15px;
-          pointer-events: none;
-          padding-top: 2px;
-        }
-      }
-      .rgbcolor {
-        margin-top: 10px;
-        .redcolor {
+        .custom-select {
+          background: none !important;
+          width: 59%;
           display: flex;
-          p {
-            font-size: 12px;
-            padding: 7px;
+          border-radius: 0px;
+          font-size: 12px;
+          position: absolute;
+          box-shadow: none;
+          padding: 6px 12px 6px 12px;
+        }
+        .selectarrow {
+          position: relative;
+          padding: 8px 0px 0px 0px;
+          font-size: 14px;
+          color: #98b7d6;
+          width: 70%;
+          i {
+            position: absolute;
+            right: 0;
+            padding-right: 15px;
+            pointer-events: none;
+            padding-top: 2px;
           }
         }
-        .form-control {
-          font-size: 12px;
-          border-radius: 0px;
-          box-shadow: none;
-          outline: none;
-          margin-bottom: 10px;
-          width: 70%;
+        .rgbcolor {
+          margin-top: 10px;
+          .redcolor {
+            display: flex;
+            p {
+              font-size: 12px;
+              padding: 7px;
+            }
+          }
+          .form-control {
+            font-size: 12px;
+            border-radius: 0px;
+            box-shadow: none;
+            outline: none;
+            margin-bottom: 10px;
+            width: 70%;
+          }
+        }
+        .color {
+          .form-control {
+            font-size: 12px;
+            border-radius: 0px;
+            box-shadow: none;
+            outline: none;
+            margin-bottom: 10px;
+          }
         }
       }
-      .color {
-        .form-control {
-          font-size: 12px;
-          border-radius: 0px;
-          box-shadow: none;
-          outline: none;
-          margin-bottom: 10px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .dashboardsection {
+    .dash {
+      .vehiclewrap {
+        .midhead {
+          .form-inline {
+            .search-element {
+              width: 100%;
+              display: flex;
+            }
+          }
+        }
+      }
+    }
+  }
+  .dashboardsection {
+    .dash {
+      .spacewrap {
+        .midhead {
+          .form-inline {
+            .form-control {
+              width: auto;
+            }
+          }
+        }
+        .endhead {
+          float: right;
+          .add {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+  .section {
+    .spacewrap {
+      margin-top: 0px;
+      .card {
+        .row {
+          .vehicle-img {
+            text-align: center;
+          }
+        }
+        .closewrap {
+          .close {
+            opacity: 1;
+            i {
+              padding: 10px 6px;
+            }
+          }
+          .edit {
+            i {
+              padding: 13px 5px;
+            }
+          }
+          .eye {
+            i {
+              padding: 12px 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .vehiclemanagementdetails {
+    .newofferwrap {
+      .subhead {
+        p {
+          font-size: 18px;
+        }
+      }
+      .toggle-right {
+        text-align: -webkit-right;
+      }
+    }
+    .offerwrap {
+      .spcloffer {
+        margin-bottom: 20px;
+      }
+      .rgb {
+        .rgbwrap {
+          .custom-select {
+            width: 64%;
+          }
+          .color {
+            .form-control {
+              width: 70%;
+            }
+          }
+        }
+      }
+
+      .offertitle {
+        .custom-select {
+          width: 93%;
+        }
+        .selectarrow {
+          width: 98%;
+        }
+      }
+    }
+    .colorwrap {
+      .subhead {
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .dashboardsection {
+    .dash {
+      .spacewrap {
+        .midhead {
+          display: none;
+        }
+        .endhead {
+          .add {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  .vehiclemanagementdetails {
+    .newofferwrap {
+      .subhead {
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+    .colorwrap {
+      .subhead {
+        p {
+          font-size: 16px;
         }
       }
     }

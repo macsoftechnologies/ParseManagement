@@ -1,19 +1,11 @@
 <nav class="navbar navbar-expand-lg main-navbar">
-  <div class="form-inline mr-auto">
-    <ul class="navbar-nav mr-3">
-      <li>
-        <a
-          data-toggle="sidebar"
-          class="nav-link nav-link-lg collapse-btn menu-icon"
-          (click)="showMenu()"
-        >
-          <i class="fa fa-bars open-icon"></i
-        ></a>
-      </li>
-      <li></li>
-    </ul>
+  <div>
+    <div class="menu-icon" (click)="menuIcon()">
+      <i class="fa fa-bars"></i>
+    </div>
   </div>
-  <ul class="navbar-nav navbar-right">
+
+  <ul class="navbar-nav navbar-right ">
     <li class="dropdown dropdown-list-toggle">
       <a
         href="#"
@@ -50,12 +42,6 @@
         </ul>
       </a>
 
-      <!-- <p>User name</p>
-        <br />
-        <p>name.surname@gmail.com</p> -->
-      <!-- <span class="d-sm-none d-lg-inline-block"></span
-      ></a> -->
-
       <div class="dropdown-menu dropdown-menu-right pullDown">
         <div class="dropdown-title">Hello UserName</div>
         <a href="#" class="dropdown-item has-icon">
@@ -74,112 +60,15 @@
       </a>
     </li>
   </ul>
-  <!-- <div class="responsivebar">
-    <ul class="navbar-nav navbar-right">
-      <li class="dropdown dropdown-list-toggle">
-        <a
-          href="#"
-          data-toggle="dropdown"
-          class="nav-linkk notification-toggle nav-link-lg"
-          ><i class="fa fa-bell"></i>
-          <span class="badge headerBadge2"> 3 </span>
-        </a>
-      </li>
-      <li class="dropdown dropdown-list-toggle">
-        <a
-          href="#"
-          data-toggle="dropdown"
-          class="nav-linkk nav-link-lg message-toggle"
-          ><i class="fa fa-envelope"></i>
-          <span class="badge headerBadge1"> 6 </span>
-        </a>
-      </li>
-
-      <li class="dropdown spacewrap">
-        <a
-          href="#"
-          data-toggle="dropdown"
-          class="nav-linkk nav-link-lg nav-link-user"
-        >
-          <img
-            alt="image"
-            src="assets/images/vehicles/user.png"
-            class="user-img-radious-style"
-          />
-        </a>
-      </li>
-      <li class="dropdown">
-        <a href="auth-login.html" class="has-icon text-danger">
-          <i class="fa fa-sign-out" aria-hidden="true"></i>
-          Logout
-        </a>
-      </li>
-    </ul>
-  </div> -->
 </nav>
 
-<!-- <section class="responsive-header">
-  <div class="form-inline mr-auto">
-    <ul class="navbar-nav mr-3">
-      <li>
-        <a
-          href="#"
-          data-toggle="sidebar"
-          class="nav-link nav-link-lg collapse-btn"
-        >
-          <i class="fa fa-bars"></i
-        ></a>
-      </li>
-      <li></li>
-    </ul>
-  </div>
-  <ul class="navbar-nav navbar-right">
-    <li class="dropdown dropdown-list-toggle">
-      <a
-        href="#"
-        data-toggle="dropdown"
-        class="nav-linkk notification-toggle nav-link-lg"
-        ><i class="fa fa-bell"></i>
-        <span class="badge headerBadge2"> 3 </span>
-      </a>
-    </li>
-    <li class="dropdown dropdown-list-toggle">
-      <a
-        href="#"
-        data-toggle="dropdown"
-        class="nav-linkk nav-link-lg message-toggle"
-        ><i class="fa fa-envelope"></i>
-        <span class="badge headerBadge1"> 6 </span>
-      </a>
-    </li>
 
-    <li class="dropdown spacewrap">
-      <a
-        href="#"
-        data-toggle="dropdown"
-        class="nav-linkk nav-link-lg nav-link-user"
-      >
-        <img
-          alt="image"
-          src="assets/images/vehicles/user.png"
-          class="user-img-radious-style"
-        />
-        <ul>
-          <li><p>User name</p></li>
-          <li><p class="surname">name.surname@gmail.com</p></li>
-        </ul>
-      </a>
-    </li>
-    <li class="dropdown">
-      <a href="auth-login.html" class="has-icon text-danger">
-        <i class="fa fa-sign-out" aria-hidden="true"></i>
-        Logout
-      </a>
-    </li>
-  </ul>
-</section> -->
-<div class="main-sidebar sidebar-style-2 menu open-menu">
+<div class="main-sidebar sidebar-style-2 main-menu">
   <aside id="sidebar-wrapper">
+    <div class="close-icon" (click)="menuIcon()">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+
     <div class="sidebar-brand">
       <a href="index.html">
         <img src="assets/images/logo/logo@1X.png" />

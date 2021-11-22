@@ -6,12 +6,14 @@ declare let $: any;
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  classList: any;
   constructor() {}
 
   ngOnInit(): void {}
-  showMenu() {
-    $('.menu').classList.toggle('open-menu');
-    $('.open-icon').classList.toggle('close-icon');
+
+  menuIcon() {
+    document.querySelector(".main-menu")?.classList.toggle("open-menu");
+    document.querySelector(".close-icon")?.classList.toggle("main-menu");
+
+    // let Newmenu = document.querySelector(".main-menu").classList.toggle("open-menu")
   }
 }

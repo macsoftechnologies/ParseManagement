@@ -19,6 +19,7 @@
     "@angular/platform-browser-dynamic": "~12.0.3",
     "@angular/router": "~12.0.3",
     "chart.js": "^2.9.4",
+    "jquery": "^3.6.0",
     "ng2-charts": "^2.4.2",
     "ngx-color": "^7.3.3",
     "rxjs": "~6.6.0",

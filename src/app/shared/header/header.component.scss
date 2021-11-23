@@ -3,9 +3,11 @@
   box-shadow: 0 4px 25px 0 rgb(0 0 0 / 10%);
   align-items: center;
   height: 54px;
+  width: 1106px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0px;
   .nav-link {
     color: #f2f2f2;
     // padding-left: 15px !important;
@@ -96,7 +98,7 @@
         }
         .badge {
           vertical-align: middle;
-          letter-spacing: 5.3px;
+          // letter-spacing: 5.3px;
           font-size: 12px;
           margin-top: 22px;
         }
@@ -168,6 +170,7 @@
         width: 230px;
         position: absolute !important;
         margin-right: -80px;
+
         .dropdown-title {
           text-transform: uppercase;
           font-size: 10px;
@@ -201,7 +204,7 @@
         left: auto;
       }
       .dropdown-menu.show {
-        display: block !important;
+        display: none;
       }
       .text-danger {
         font-size: 14px;
@@ -213,9 +216,9 @@
         }
       }
     }
-    :last-child {
-      padding-right: 0px !important;
-    }
+    // :last-child {
+    //   padding-right: 0px !important;
+    // }
     li.spacewrap {
       padding-right: 10px;
     }
@@ -257,9 +260,10 @@
     }
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .navbar {
     flex-wrap: nowrap;
+    width: auto;
 
     ul.navbar-right {
       li {
@@ -369,6 +373,9 @@
     }
   }
 }
+.main-sidebar {
+  display: none;
+}
 .menu-icon {
   // display: none;
   @media (max-width: 992px) {
@@ -376,37 +383,66 @@
   }
 }
 @media (max-width: 1300px) {
-  .menu {
-    display: none;
-  }
+  // .main-sidebar {
+  //   display: none;
+  // }
 }
 
-@media (max-width: 768px) {
-  .main-sidebar.menu {
+@media (max-width: 1300px) {
+  .main-sidebar.main-menu {
     display: block;
   }
 }
-
+@media (max-width: 1300px) {
+  .navbar {
+    ul.navbar-nav.navbar-right {
+      li.dropdown {
+        .dropdown-menu.show {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    ul.navbar-nav.navbar-right {
+      li.dropdown {
+        .dropdown-menu.show {
+          display: block;
+        }
+      }
+    }
+  }
+}
 
 // New Code
 
 .menu-icon {
-  padding: 0px 10px;
+  padding: 0px 15px;
+  background: rgb(243 77 115);
   i {
     color: #fff;
+    height: 54px;
+    width: 27px;
+    padding: 18px 6px;
+    font-size: 17px;
   }
 }
 
 .main-menu {
   transform: translateX(-400px);
+  transition: 0.8s ease;
 }
 
 .open-menu {
   transform: translateX(0px);
+  transition: 0.8s ease;
 }
 
 .close-icon {
   text-align: end;
-  font-size: 16px;
+  font-size: 19px;
   color: #000;
+  padding: 10px 15px 0px 0px;
 }

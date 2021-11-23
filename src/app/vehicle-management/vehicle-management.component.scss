@@ -4,10 +4,10 @@
       padding: 10px 20px;
       .subhead {
         p {
-          font-size: 17px;
+          font-size: 18px;
           font-weight: 500;
           color: #53af94;
-          padding: 0px 0px 10px 2px;
+          padding: 5px 0px 10px 0px;
           margin: 0px;
           display: inline-block;
         }
@@ -532,18 +532,24 @@
   }
   .section {
     .spacewrap {
-      margin-top: 0px;
+      margin-top: 15px;
       .card {
         .row {
           .vehicle-img {
             text-align: center;
+            img {
+              width: 130px;
+              height: 150px;
+              margin: auto;
+              padding: 30px 10px 10px 10px;
+            }
           }
         }
         .closewrap {
           .close {
             opacity: 1;
             i {
-              padding: 10px 6px;
+              padding: 10px 5px;
             }
           }
           .edit {
@@ -553,7 +559,7 @@
           }
           .eye {
             i {
-              padding: 12px 0px;
+              padding: 12px 5px;
             }
           }
         }

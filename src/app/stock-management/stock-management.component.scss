@@ -205,10 +205,36 @@
     }
   }
 }
+@media (max-width: 992px) {
+  .section {
+    .spacewrap {
+      margin-bottom: 30px;
+      .exportbtn {
+        .btn-primary {
+          width: 100%;
+        }
+      }
+      .custom-select {
+        width: 89%;
+      }
+      .selectarrow {
+        width: 96%;
+      }
+      .stockrow {
+        .leftimg {
+          img {
+            height: 200px;
+            padding: 30px;
+          }
+        }
+      }
+    }
+  }
+}
 @media (max-width: 768px) {
   .section {
     .spacewrap {
-      margin-top: 0px;
+      margin-top: 15px;
       margin-bottom: 0px;
       .exportbtn {
         .btn-primary {
@@ -228,6 +254,19 @@
             width: 100%;
             height: 100%;
           }
+        }
+      }
+      .add1 {
+        .cart-plus-minus {
+          width: 65px;
+        }
+        button {
+          padding: 6px 20px;
+        }
+      }
+      .righttext {
+        p {
+          font-size: 12px;
         }
       }
     }

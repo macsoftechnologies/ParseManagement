@@ -11,8 +11,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {}
 
   menuIcon() {
-    document.querySelector(".main-menu")?.classList.toggle("open-menu");
-    document.querySelector(".close-icon")?.classList.toggle("main-menu");
+    document.querySelector('.main-menu')?.classList.toggle('open-menu');
+    document.querySelector('.close-icon')?.classList.toggle('open-menu');
 
     // let Newmenu = document.querySelector(".main-menu").classList.toggle("open-menu")
   }

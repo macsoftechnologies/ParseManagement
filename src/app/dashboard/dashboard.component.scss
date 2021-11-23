@@ -5,10 +5,10 @@
       border-bottom: 1px solid #8080802e;
       .subhead {
         p {
-          font-size: 17px;
+          font-size: 18px;
           font-weight: 500;
           color: #53af94;
-          padding: 5px 0px 10px 8px;
+          padding: 5px 0px 10px 0px;
           margin: 0px;
           display: inline-block;
         }
@@ -38,11 +38,11 @@
       .endhead {
         padding-top: 4px;
         .add {
-          background: #e50707;
+          background: rgb(243 77 115);
           color: white;
           padding: 5px 10px;
           font-size: 14px;
-          border: 1px solid #e50707;
+          border: 1px solid rgb(243 77 115);
           box-shadow: none;
           outline: none;
         }
@@ -195,7 +195,7 @@
         }
         .openoffers {
           img {
-            width: 220px;
+            width: 100%;
             height: 187px;
           }
         }
@@ -227,6 +227,7 @@
         }
         .checktimes {
           ul {
+            display: table;
             li {
               list-style-type: none;
               float: left;
@@ -248,9 +249,50 @@
             background: none;
             color: #007bff;
             float: right;
-            padding: 18px 10px;
+            // padding: 18px 10px;
             text-decoration: underline;
             box-shadow: none;
+          }
+        }
+        .bluebar {
+          display: block;
+          width: 280px;
+          height: 180px;
+        }
+        .redbar {
+          display: block;
+          width: 280px;
+          height: 180px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .section {
+    .spacewrap {
+      .card {
+        margin-bottom: 15px;
+        .card-body {
+          .bluebar {
+            display: block;
+            width: 220px;
+            height: 180px;
+          }
+          .redbar {
+            display: block;
+            width: 220px;
+            height: 180px;
+          }
+          table {
+            td {
+              width: auto;
+            }
+          }
+          .openloans {
+            p {
+              font-size: 14px;
+            }
           }
         }
       }
@@ -268,6 +310,11 @@
         .redbar {
           width: 100% !important;
         }
+        .openloans {
+          p {
+            font-size: 14px;
+          }
+        }
       }
     }
     .spacewrap {
@@ -276,7 +323,7 @@
         .card-body {
           .openloans {
             p {
-              font-size: 14px;
+              font-size: 13px;
             }
           }
           .checktimes {
@@ -287,14 +334,32 @@
           }
           .openoffers {
             img {
-              width: 170px;
+              width: 100%;
               height: 187px;
+            }
+          }
+          .checktimes {
+            ul {
+              padding-left: 0px;
             }
           }
           table {
             td {
+              padding: 4px 0px;
               width: auto;
+              ul {
+                li {
+                  font-size: 11px;
+                  flex-wrap: nowrap;
+                }
+              }
             }
+          }
+        }
+        .card-header {
+          h4 {
+            font-size: 13px;
+            padding: 10px 0 0 0;
           }
         }
       }

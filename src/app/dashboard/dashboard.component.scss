@@ -268,6 +268,47 @@
     }
   }
 }
+@media (max-width: 1320px) {
+  .section {
+    .spacewrap {
+      .card {
+        .card-body {
+          table {
+            td {
+              width: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .section {
+    .spacewrap {
+      .card {
+        margin-bottom: 15px;
+        .card-body {
+          .bluebar {
+            display: block;
+            width: 235px;
+            height: 180px;
+          }
+          .redbar {
+            display: block;
+            width: 235px;
+            height: 180px;
+          }
+          table {
+            td {
+              width: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 @media (max-width: 1024px) {
   .section {
     .spacewrap {
@@ -276,12 +317,12 @@
         .card-body {
           .bluebar {
             display: block;
-            width: 220px;
+            width: 260px;
             height: 180px;
           }
           .redbar {
             display: block;
-            width: 220px;
+            width: 260px;
             height: 180px;
           }
           table {
@@ -292,6 +333,32 @@
           .openloans {
             p {
               font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .section {
+    .spacewrap {
+      .card {
+        margin-bottom: 15px;
+        .card-body {
+          .bluebar {
+            display: block;
+            width: 245px;
+            height: 180px;
+          }
+          .redbar {
+            display: block;
+            width: 245px;
+            height: 180px;
+          }
+          table {
+            td {
+              width: auto;
             }
           }
         }

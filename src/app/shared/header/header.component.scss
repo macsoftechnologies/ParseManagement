@@ -3,7 +3,7 @@
   box-shadow: 0 4px 25px 0 rgb(0 0 0 / 10%);
   align-items: center;
   height: 54px;
-  width: 1106px;
+  width: 1104px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -260,7 +260,30 @@
     }
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1326px) {
+  .navbar {
+    width: 1085px;
+  }
+}
+@media (max-width: 1300px) {
+  .navbar {
+    flex-wrap: nowrap;
+    width: auto;
+
+    ul.navbar-right {
+      li {
+        ul.userblock {
+          li {
+            p {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
   .navbar {
     flex-wrap: nowrap;
     width: auto;
@@ -277,6 +300,7 @@
       }
     }
   }
+
   .navbar .navbar-nav {
     flex-direction: row;
     flex-wrap: nowrap;
@@ -388,7 +412,7 @@
   // }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1024px) {
   .main-sidebar.main-menu {
     display: block;
   }

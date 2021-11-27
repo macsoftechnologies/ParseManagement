@@ -37,6 +37,7 @@
       }
       .endhead {
         padding-top: 4px;
+        text-align: end;
         .add {
           background: rgb(243 77 115);
           color: white;
@@ -182,6 +183,21 @@
                 list-style-type: none;
                 float: left;
                 padding: 0 3px;
+                i.fa-eye {
+                  color: black;
+                }
+                i.fa-share-alt {
+                  color: blue;
+                }
+                i.fa-download {
+                  color: brown;
+                }
+                i.fa-check {
+                  color: #41cf41;
+                }
+                i.fa-times {
+                  color: red;
+                }
               }
             }
             a {
@@ -227,12 +243,14 @@
         }
         .checktimes {
           ul {
-            display: table;
+            display: flex;
+            padding-left: 0px;
+            padding-top: 22px;
             li {
               list-style-type: none;
-              float: left;
+              // float: left;
               i {
-                padding-right: 15px;
+                padding-right: 10px;
                 font-size: 20px;
               }
               i.fa-check {
@@ -414,19 +432,44 @@
             td {
               padding: 4px 0px;
               width: auto;
+              font-size: 13px;
               ul {
                 li {
                   font-size: 11px;
                   flex-wrap: nowrap;
                 }
               }
+
+              a {
+                font-size: 13px;
+              }
+            }
+          }
+          .outofstck {
+            h6 {
+              font-size: 13px;
+            }
+            p {
+              font-size: 24px;
+            }
+          }
+          .lowstck {
+            h6 {
+              font-size: 13px;
+            }
+            p {
+              font-size: 24px;
             }
           }
         }
         .card-header {
           h4 {
-            font-size: 13px;
+            font-size: 12px;
             padding: 10px 0 0 0;
+          }
+          p {
+            font-size: 13px;
+            padding-top: 5px;
           }
         }
       }

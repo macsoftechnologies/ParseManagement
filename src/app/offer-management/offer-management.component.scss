@@ -34,6 +34,7 @@
         }
       }
       .endhead {
+        text-align: end;
         .add {
           background: rgba(241, 41, 87, 0.83);
           color: white;
@@ -85,6 +86,8 @@
       }
     }
     .endhead {
+      padding-top: 4px;
+      text-align: end;
       .add {
         background: rgb(243 77 115);
         color: white;
@@ -105,6 +108,17 @@
       img {
         width: 100%;
         height: 180px;
+      }
+      i {
+        bottom: 101px;
+        position: absolute;
+        right: 8px;
+        font-size: 22px;
+        font-weight: 800;
+        background: #f34d73;
+        width: 33px;
+        height: 32px;
+        padding: 7px;
       }
       .closewrap {
         display: flex;
@@ -253,6 +267,17 @@
         width: 100%;
         height: 218px;
       }
+      i {
+        bottom: 53px;
+        position: absolute;
+        right: 17px;
+        font-size: 22px;
+        font-weight: 800;
+        background: #f34d73;
+        width: 30px;
+        height: 30px;
+        padding: 6px;
+      }
       p {
         border: 2px solid #f34d73;
         height: 218px;
@@ -297,10 +322,104 @@
     .spacewrap {
       .card {
         margin-bottom: 15px;
+        i {
+          bottom: 88px;
+        }
+        .card-body {
+          .toggle-right {
+            .toggle {
+              width: 45px;
+              height: 60px;
+            }
+          }
+          p.card-text {
+            font-size: 11px;
+          }
+        }
       }
     }
     .hr-line {
       margin: 10px 0;
+    }
+  }
+  .section {
+    .offerwrap {
+      .endhead {
+        text-align: end;
+        .add {
+          padding: 5px 6px;
+          font-size: 13px;
+        }
+      }
+      .spcloffer {
+        i {
+          bottom: 111px;
+        }
+      }
+    }
+  }
+  .dashboardsection {
+    .dash {
+      .spacewrap {
+        .midhead {
+          .form-inline {
+            .search-element {
+              display: flex;
+            }
+            .form-control {
+              width: auto;
+            }
+          }
+        }
+        .endhead {
+          text-align: end;
+          .add {
+            padding: 5px 4px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .section {
+    .offerwrap {
+      .endhead {
+        text-align: end;
+        .add {
+          padding: 5px 6px;
+          font-size: 13px;
+        }
+      }
+      .spcloffer {
+        i {
+          bottom: 18px;
+        }
+      }
+    }
+  }
+  .dashboardsection {
+    .dash {
+      .spacewrap {
+        .midhead {
+          .form-inline {
+            .search-element {
+              display: flex;
+            }
+            .form-control {
+              width: auto;
+            }
+          }
+        }
+        .endhead {
+          text-align: end;
+          .add {
+            padding: 5px 4px;
+            font-size: 12px;
+          }
+        }
+      }
     }
   }
 }

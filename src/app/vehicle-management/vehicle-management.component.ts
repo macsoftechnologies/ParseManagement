@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ColorSketchModule } from 'ngx-color/sketch';
 import { ColorEvent } from 'ngx-color';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-vehicle-management',
@@ -38,5 +39,74 @@ export class VehicleManagementComponent implements OnInit {
     //     a: 1,
     //   },
     // }
+  }
+  // imagePath: any;
+  // imgURL: any;
+  // imgURL1: any;
+  // imgURL2: any;
+  // imgURL3: any;
+  // message: any;
+  // files: any;
+
+  // preview(files: string | any) {
+  //   if (files.length === 0) return;
+
+  //   var mimeType = files[0].type;
+  //   if (mimeType.match(/image\/*/) == null) {
+  //     this.message = 'Only images are supported.';
+  //     return;
+  //   }
+
+  //   var reader = new FileReader();
+  //   this.imagePath = files;
+  //   reader.readAsDataURL(files[0]);
+  //   reader.onload = (_event) => {
+  //     this.imgURL = reader.result;
+  //   };
+  // }
+
+  // imageDeleteFrom!: FormGroup;
+  // imageurls = [];
+  // base64String: string | undefined;
+
+  // name: any;
+  // i: any;
+  // event: any;
+  // imagePath: any;
+
+  // removeImageEdit(i: any, imagepath: any): void {
+  //   this.imageDeleteFrom.value.id = i;
+  //   this.imageDeleteFrom.value.ImagePath = imagepath;
+  // }
+
+  // removeImage(i: number) {
+  //   this.imageurls.splice(i, 1);
+  // }
+  // onSelectFile(event: { target: any }) {
+  //   if (event.target.files && event.target.files[0]) {
+  //     var filesAmount = event.target.files.length;
+  //     for (let i = 0; i < filesAmount; i++) {
+  //       var reader = new FileReader();
+  //       reader.onload = (event: any) => {
+  //         this.imageurls.push({ $base64String: event.target.result });
+  //       };
+  //       reader.readAsDataURL(event.target.files[i]);
+  //     }
+  //   }
+  // }
+
+  // urls: any;
+  urls: any[] = [];
+
+  selectFiles(event: any) {
+    if (event.target.files) {
+      for (var i = 0; i < File.length; i++) {
+        var reader = new FileReader();
+        reader.readAsDataURL(event.target.files[i]);
+        reader.onload = (event: any) => {
+          this.urls.push(event.target.result);
+        };
+      }
+    }
   }
 }

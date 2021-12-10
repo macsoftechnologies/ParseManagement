@@ -401,12 +401,7 @@
 .main-sidebar {
   display: none;
 }
-.menu-icon {
-  // display: none;
-  @media (max-width: 992px) {
-    display: block;
-  }
-}
+
 @media (max-width: 1300px) {
   // .main-sidebar {
   //   display: none;
@@ -418,7 +413,7 @@
     display: block;
   }
 }
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
   .navbar {
     ul.navbar-nav.navbar-right {
       li.dropdown {
@@ -426,6 +421,16 @@
           display: none;
         }
       }
+    }
+    .menu-icon {
+      display: none;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .navbar {
+    .menu-icon {
+      display: block;
     }
   }
 }

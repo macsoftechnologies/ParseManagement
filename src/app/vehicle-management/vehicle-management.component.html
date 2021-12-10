@@ -24,7 +24,14 @@
       </div>
       <div class="col-5 col-sm-3 col-md-3">
         <div class="endhead">
-          <button type="button" class="add">+ADD VEHICLE</button>
+          <button
+            type="button"
+            class="add"
+            data-toggle="modal"
+            data-target="#addvehicle"
+          >
+            +ADD VEHICLE
+          </button>
         </div>
       </div>
     </div>
@@ -303,7 +310,7 @@
     </div>
     <div class="col-3 col-sm-5 col-md-6"></div>
     <div class="col-3 col-sm-3 col-md-3 toggle-right">
-      <div class="toggle">
+      <!-- <div class="toggle">
         <p>Active</p>
         <label>
           <input
@@ -315,10 +322,10 @@
           />
           <span class="custom-switch-indicator"></span>
         </label>
-      </div>
+      </div> -->
     </div>
   </div>
-  <div class="row offerwrap">
+  <div class="row offerwrap" style="border-bottom: 1px dotted #dadada">
     <div class="col-12 col-sm-4 col-md-4 col-md-4">
       <div class="row">
         <div class="col-md-10">
@@ -333,8 +340,10 @@
     </div>
     <div class="col-12 col-sm-8 col-md-6">
       <div class="offertitle">
-        <input type="text" placeholder="Name" class="form-control" />
-        <select name="states" class="custom-select mb-3" value="select">
+        <input type="text" placeholder="Ather" class="form-control" />
+        <input type="text" placeholder="Ather 450X" class="form-control" />
+        <input type="text" placeholder="E Bikes" class="form-control" />
+        <!-- <select name="states" class="custom-select mb-3" value="select">
           <option value="Model" selected>Model</option>
           <option value="a">a</option>
           <option value="b">b</option>
@@ -350,8 +359,8 @@
           ></i>
         </div>
         <br />
-        <br />
-        <select name="states" class="custom-select mb-3" value="select">
+        <br /> -->
+        <!-- <select name="states" class="custom-select mb-3" value="select">
           <option value="Model" selected>Vendor</option>
           <option value="a">a</option>
           <option value="b">b</option>
@@ -367,7 +376,7 @@
           ></i>
         </div>
         <br />
-        <br />
+        <br /> -->
 
         <div class="row">
           <div class="col-md-6 pricewrap">
@@ -394,6 +403,88 @@
     <div class="col-md-2">
       <div class="endhead"></div>
     </div>
+  </div>
+  <div class="row colorwrap" style="margin-top: 30px; margin-bottom: 30px">
+    <div class="col-md-6">
+      <div class="subhead"><p>Specifications</p></div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="specifications">
+            <p>
+              <i class="fa fa-map-marker" aria-hidden="true"></i>True Range :
+            </p>
+            <p>
+              <i class="fa fa-map-marker" aria-hidden="true"></i>Peak Power :
+            </p>
+            <p><i class="fa fa-map-marker" aria-hidden="true"></i>Torque :</p>
+            <p>
+              <img
+                src="../../assets/images/vehicles/Transport-Speedometer-icon.png"
+              />Top Speed :
+            </p>
+            <p>
+              <i class="fa fa-battery-full" aria-hidden="true"></i>Charging Time
+              :
+            </p>
+            <p>
+              <i class="fa fa-map-marker" aria-hidden="true"></i>Usable Capacity
+              :
+            </p>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="units">
+            <input
+              type="text"
+              class="form-control spec"
+              placeholder="70"
+            /><span>Km</span>
+          </div>
+          <div class="units">
+            <input
+              type="text"
+              class="form-control spec"
+              placeholder="5.4"
+            /><span>kW</span>
+          </div>
+          <div class="units">
+            <input
+              type="text"
+              class="form-control spec"
+              placeholder="22"
+            /><span>Nm</span>
+          </div>
+          <div class="units">
+            <input
+              type="text"
+              class="form-control spec"
+              placeholder="80"
+            /><span>km/h</span>
+          </div>
+          <div class="units">
+            <input
+              type="text"
+              placeholder="3hrs"
+              class="form-control spec time"
+            />:&nbsp;
+            <input
+              type="text"
+              placeholder="35min"
+              class="form-control spec time"
+            />
+          </div>
+          <div class="units">
+            <input
+              type="text"
+              class="form-control spec"
+              placeholder="2.6 
+            "
+            /><span>kWh</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6"></div>
   </div>
   <div class="row colorwrap">
     <div class="col-md-3">
@@ -430,7 +521,7 @@
           <div class="grey"><input type="checkbox" checked /></div>
         </div>
       </div>
-      <div class="rgb">
+      <!-- <div class="rgb">
         <div class="row rgbwrap">
           <div class="col-md-7">
             <select name="states" class="custom-select mb-3" value="select">
@@ -470,9 +561,10 @@
             <div class="color">
               <input type="text" class="form-control" value="#763FF0" />
             </div>
+            <button type="button" class="btn-primary">Save</button>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <div class="col-12 col-sm-6 col-md-4">
@@ -485,3 +577,242 @@
     </div>
   </div>
 </section>
+<div
+  class="modal fade"
+  id="addvehicle"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myLargeModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5
+          class="modal-title"
+          id="exampleModalLongTitle"
+          style="font-size: 16px; color: blue; font-weight: 600"
+        >
+          ADD VEHICLE
+        </h5>
+
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-12">
+            <img
+              [src]="url"
+              *ngFor="let url of urls"
+              alt=""
+              width="100"
+              height="100"
+              style="margin-right: 20px"
+            />
+            <button type="button" class="btn btn-primary">
+              <span
+                ><i class="fas fa-plus-circle"></i>
+                <p>ADD IMAGE</p></span
+              >
+              <input type="file" (change)="selectFiles($event)" multiple />
+            </button>
+          </div>
+        </div>
+        <!-- <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+              <img
+                [src]="url"
+                *ngFor="let url of urls"
+                alt=""
+                width="100"
+                height="100"
+              />
+              <input type="file" (change)="selectFiles($event)" multiple />
+              <div
+                class="col-md-2 productAddfromImages"
+                *ngFor="let url of imageurls; let i = index"
+              >
+                <img class="img-fluid" [src]="url" />
+                <a (click)="removeImage(i)" class="btn btn-xs btn-danger"
+                  >Remove</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card main-title">
+            <div class="col-md-12">
+              <div class="form-group">
+                <br />
+                <label class="form-label">Add Images</label>
+                <input
+                  type="file"
+                  class="form-control"
+                  (change)="onSelectFile($event)"
+                  multiple
+                  accept="image/*"
+                />
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="row">
+          <div class="col-md-3">
+            <div class="uploadimg1">
+              <img [src]="imgURL" height="200" *ngIf="imgURL" />
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="uploadimg1">
+              <img [src]="imgURL" height="200" *ngIf="imgURL" />
+              
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="uploadimg1">
+              <img [src]="imgURL" height="200" *ngIf="imgURL" />
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="uploadimg1">
+              <img [src]="imgURL" height="200" *ngIf="imgURL" />
+            </div>
+          </div>
+          <i class="fas fa-plus-circle">
+            <input
+              class="btn"
+              type="file"
+              #file
+              accept="image/*"
+              (change)="preview(file.files)"
+              multiple
+          /></i>
+        </div> -->
+        <div class="row vehicle-details-wrap">
+          <!-- <div class="col-md-4">
+            <div class="spcloffer">
+              <input
+                #file
+                type="file"
+                accept="image/*"
+                (change)="preview(file.files)"
+              />
+              <img [src]="imgURL" height="200" *ngIf="imgURL" />
+
+              <p>
+                Upload Image&nbsp;&nbsp;<i
+                  aria-hidden="true"
+                  class="fa fa-edit"
+                ></i>
+              </p>
+            </div>
+            <div class="uploadvehicle">
+              <input
+                type="file"
+                accept="image/*"
+                name="image"
+                id="file"
+                onchange="loadFile(event)"
+                style="display: none"
+                multiple
+              />
+            </div>
+          </div> -->
+
+          <div class="col-md-6">
+            <div class="offertitle">
+              <input type="text" placeholder="Name" class="form-control" />
+              <input type="text" placeholder="Model" class="form-control" />
+              <input type="text" placeholder="Vendor" class="form-control" />
+
+              <div class="row">
+                <div class="col-md-6 pricewrap">
+                  <input type="text" class="form-control price" />
+                  <p>Rs.&nbsp;&nbsp;</p>
+                </div>
+                <div class="col-md-6 pricewrap">
+                  <input type="text" class="form-control price" />
+                  <p>Rs.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 pricewrap">
+                  <input type="text" class="form-control price" />
+                  <p>W</p>
+                </div>
+                <div class="col-md-6 pricewrap">
+                  <input type="text" class="form-control price" />
+                  <p>Km/charge</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6"></div>
+        </div>
+        <div class="row colorwrap">
+          <div class="col-md-12">
+            <div class="subhead"><p>Specifications</p></div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="specifications">
+                  <p>True Range :</p>
+                  <p>Peak Power :</p>
+                  <p>Torque :</p>
+                  <p>Top Speed :</p>
+                  <p>Charging Time :</p>
+                  <p>Usable Capacity :</p>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="units">
+                  <input type="text" class="form-control spec" /><span>Km</span>
+                </div>
+                <div class="units">
+                  <input type="text" class="form-control spec" /><span>kW</span>
+                </div>
+                <div class="units">
+                  <input type="text" class="form-control spec" /><span>Nm</span>
+                </div>
+                <div class="units">
+                  <input type="text" class="form-control spec" /><span
+                    >km/h</span
+                  >
+                </div>
+                <div class="units">
+                  <input
+                    type="text"
+                    class="form-control spec time"
+                    placeholder="hrs"
+                  />:&nbsp;
+                  <input
+                    type="text"
+                    class="form-control spec time"
+                    placeholder="mins"
+                  />
+                </div>
+                <div class="units">
+                  <input type="text" class="form-control spec" /><span
+                    >kWh</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

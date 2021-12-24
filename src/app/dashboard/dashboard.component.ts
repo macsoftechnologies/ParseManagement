@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ChartType } from 'chart.js';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-dashboard',
@@ -101,5 +102,26 @@ export class DashboardComponent implements OnInit {
     reader.onload = (_event) => {
       this.imgURL = reader.result;
     };
+  }
+  urls: any[] = [];
+  index: any;
+  imageDeleteFrom!: FormGroup;
+  // imagePath: any;
+  RemoveImage: boolean = false;
+
+  selectFiles(event: any) {
+    if (event.target.files) {
+      for (var i = 0; i < File.length; i++) {
+        var reader = new FileReader();
+        reader.readAsDataURL(event.target.files[i]);
+        reader.onload = (event: any) => {
+          this.urls.push(event.target.result);
+          this.RemoveImage = true;
+        };
+      }
+    } else this.RemoveImage = false;
+  }
+  removeSelectedFile(index: any) {
+    this.urls.splice(index, 1);
   }
 }

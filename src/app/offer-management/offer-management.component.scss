@@ -522,3 +522,230 @@
     }
   }
 }
+#addvehicle {
+  .spcloffer {
+    position: relative;
+    input#fileToUpload {
+      background: transparent;
+      color: white;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 37%;
+      right: -62px;
+      opacity: 0;
+    }
+    p {
+      border: 2px solid #f34d73;
+      height: 218px;
+      text-align: center;
+      vertical-align: middle;
+      align-items: center;
+      padding: 94px 0;
+      color: #f34d73;
+      font-size: 14px;
+    }
+    input {
+      width: 100%;
+      position: absolute;
+      top: 88px;
+      opacity: 0;
+    }
+    img {
+      padding: 50px;
+      width: 235px;
+      position: absolute;
+      height: 218px;
+      margin: auto;
+      text-align: center;
+    }
+  }
+
+  .offertitle {
+    .form-control {
+      margin-bottom: 15px;
+      border-radius: 0px;
+      box-shadow: none;
+      outline: none;
+      font-size: 15px;
+    }
+    .pricewrap {
+      display: flex;
+      input.form-control.price {
+        width: 50%;
+        margin-right: 5px;
+        font-weight: 500;
+      }
+      p {
+        padding-top: 5px;
+        font-weight: 500;
+        font-size: 14px;
+      }
+    }
+  }
+  .colorwrap {
+    .subhead {
+      p {
+        font-size: 18px;
+        font-weight: 400;
+        color: #266ace;
+        margin-bottom: 10px;
+        display: inline-block;
+        text-decoration: underline;
+      }
+    }
+    .specifications {
+      p {
+        line-height: 36px;
+        img {
+          width: 25px !important;
+          height: 25px;
+          margin-right: 5px;
+        }
+        i {
+          font-size: 26px;
+          margin-right: 5px;
+        }
+      }
+    }
+    .units {
+      display: flex;
+      input.form-control.spec {
+        width: 150px;
+        display: inline-block;
+        margin-bottom: 15px;
+        border-radius: 0px;
+        box-shadow: none;
+        outline: none;
+        font-size: 15px;
+        margin-right: 10px;
+      }
+      span {
+        margin-top: 5px;
+      }
+      input.form-control.time {
+        width: 68px;
+        margin-right: 5px;
+        padding: 10px;
+      }
+    }
+  }
+  .modal-body {
+    .uploadimg1 {
+      position: relative;
+      img {
+        width: -webkit-fill-available;
+        height: 170px;
+        padding: 18px;
+        border: 1px solid red;
+      }
+    }
+    button.btn {
+      outline: none;
+      box-shadow: none;
+      border: none;
+      i {
+        font-size: 25px;
+      }
+    }
+    span.closewrap {
+      display: flex;
+      // flex-wrap: wrap;
+      overflow: hidden;
+      div {
+        img {
+          margin-bottom: 20px;
+          position: relative;
+          margin-right: 30px;
+        }
+        i {
+          position: absolute;
+          top: -10px;
+          font-size: 20px;
+          margin-left: -32px;
+        }
+        // button {
+        //   position: absolute;
+        //   background: transparent;
+        //   border: none;
+
+        //   left: 106px;
+        //   top: -14px;
+        //   outline: none;
+        //   box-shadow: none;
+        //   opacity: 1;
+        // }
+      }
+    }
+
+    button.btn-primary {
+      // width: 150px;
+      // height: 50px;
+      // padding: 13px;
+      // font-size: 15px;
+      // box-shadow: none;
+      // outline: none;
+      // border: none;
+      // display: flex;
+      // margin-bottom: 20px;
+      width: 120px;
+      height: 44px;
+      padding: 7px;
+      font-size: 15px;
+      box-shadow: none;
+      outline: none;
+      border: none;
+      color: black;
+      position: relative;
+      margin: 28px 0px;
+      input {
+        opacity: 0;
+        position: absolute;
+        // left: 0px;
+        // width: 150px;
+
+        // width: 30px;
+        left: 0px;
+        width: 120px;
+        text-align: center;
+        height: 44px;
+        top: 0px;
+      }
+      span {
+        display: flex;
+        i {
+          font-size: 21px;
+          margin-right: 10px;
+          margin-top: 6px;
+          color: white;
+        }
+        p {
+          margin-bottom: 0px;
+          color: white;
+          padding: 7px 0;
+          font-size: 12px;
+          font-weight: 600;
+        }
+      }
+    }
+    .vehicle-details-wrap {
+      padding-top: 20px;
+      .subhead {
+        p {
+          font-size: 18px;
+          font-weight: 400;
+          color: #266ace;
+          margin-bottom: 10px;
+          display: inline-block;
+          text-decoration: underline;
+        }
+      }
+      // padding-top: 30px;
+    }
+  }
+  .modal-footer {
+    button {
+      padding: 8px 25px;
+    }
+  }
+}

@@ -97,6 +97,10 @@ export class VehicleManagementComponent implements OnInit {
 
   // urls: any;
   urls: any[] = [];
+  index: any;
+  imageDeleteFrom!: FormGroup;
+  imagePath: any;
+  RemoveImage: boolean = false;
 
   selectFiles(event: any) {
     if (event.target.files) {
@@ -105,8 +109,13 @@ export class VehicleManagementComponent implements OnInit {
         reader.readAsDataURL(event.target.files[i]);
         reader.onload = (event: any) => {
           this.urls.push(event.target.result);
+          this.RemoveImage = true;
         };
       }
-    }
+    } else this.RemoveImage = false;
   }
+  removeSelectedFile(index: any) {
+    this.urls.splice(index, 1);
+  }
+  
 }

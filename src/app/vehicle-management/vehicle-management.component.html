@@ -379,21 +379,30 @@
         <br /> -->
 
         <div class="row">
-          <div class="col-md-6 pricewrap">
-            <input type="text" value="63,640" class="form-control price" />
+          <div class="col-md-12 pricewrap">
+            <label>Price Range:</label>
+            <input
+              type="text"
+              value="Min"
+              class="form-control price"
+            />-&nbsp;&nbsp;<input
+              type="text"
+              value="Max"
+              class="form-control price"
+            />
             <p>Rs.&nbsp;&nbsp;</p>
           </div>
-          <div class="col-md-6 pricewrap">
+          <!-- <div class="col-md-6 pricewrap">
             <input type="text" value="0" class="form-control price" />
             <p>Rs.</p>
-          </div>
+          </div> -->
         </div>
         <div class="row">
-          <div class="col-md-6 pricewrap">
+          <div class="col-md-6 pricewrapp">
             <input type="text" value="250" class="form-control price" />
             <p>W</p>
           </div>
-          <div class="col-md-6 pricewrap">
+          <div class="col-md-6 pricewrapp">
             <input type="text" value="85" class="form-control price" />
             <p>Km/charge</p>
           </div>
@@ -408,31 +417,28 @@
     <div class="col-md-6">
       <div class="subhead"><p>Specifications</p></div>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-5">
           <div class="specifications">
             <p>
               <i class="fa fa-map-marker" aria-hidden="true"></i>True Range :
             </p>
-            <p>
-              <i class="fa fa-map-marker" aria-hidden="true"></i>Peak Power :
-            </p>
-            <p><i class="fa fa-map-marker" aria-hidden="true"></i>Torque :</p>
+            <p><i class="fa fa-bolt" aria-hidden="true"></i>Peak Power :</p>
+            <p><i class="fa fa-line-chart" aria-hidden="true"></i>Torque :</p>
             <p>
               <img
-                src="../../assets/images/vehicles/Transport-Speedometer-icon.png"
+                src="assets/images/vehicles/Transport-Speedometer-icon.png"
               />Top Speed :
             </p>
             <p>
-              <i class="fa fa-battery-full" aria-hidden="true"></i>Charging Time
-              :
+              <i class="fa fa-clock-o" aria-hidden="true"></i>Charging Time :
             </p>
             <p>
-              <i class="fa fa-map-marker" aria-hidden="true"></i>Usable Capacity
-              :
+              <i class="fa fa-battery-full" aria-hidden="true"></i>Usable
+              Capacity :
             </p>
           </div>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-7">
           <div class="units">
             <input
               type="text"
@@ -608,125 +614,37 @@
       <div class="modal-body">
         <div class="row">
           <div class="col-md-12">
-            <img
-              [src]="url"
-              *ngFor="let url of urls"
-              alt=""
-              width="100"
-              height="100"
-              style="margin-right: 20px"
-            />
-            <button type="button" class="btn btn-primary">
-              <span
-                ><i class="fas fa-plus-circle"></i>
-                <p>ADD IMAGE</p></span
-              >
-              <input type="file" (change)="selectFiles($event)" multiple />
-            </button>
-          </div>
-        </div>
-        <!-- <div class="row">
-          <div class="col-md-12">
-            <div class="row">
-              <img
-                [src]="url"
-                *ngFor="let url of urls"
-                alt=""
-                width="100"
-                height="100"
-              />
-              <input type="file" (change)="selectFiles($event)" multiple />
-              <div
-                class="col-md-2 productAddfromImages"
-                *ngFor="let url of imageurls; let i = index"
-              >
-                <img class="img-fluid" [src]="url" />
-                <a (click)="removeImage(i)" class="btn btn-xs btn-danger"
-                  >Remove</a
-                >
+            <span class="closewrap">
+              <div *ngFor="let url of urls; let index = index">
+                <img [src]="url" alt="" width="100" height="100" />
+
+                <i
+                  class="fa fa-times-circle"
+                  aria-hidden="true"
+                  (click)="removeSelectedFile(index)"
+                  *ngIf="RemoveImage"
+                ></i>
               </div>
-            </div>
-          </div>
-          <div class="card main-title">
-            <div class="col-md-12">
-              <div class="form-group">
-                <br />
-                <label class="form-label">Add Images</label>
+
+              <button type="button" class="btn btn-primary">
+                <span
+                  ><i class="fa fa-plus-circle"></i>
+                  <p>ADD IMAGE</p></span
+                >
                 <input
                   type="file"
-                  class="form-control"
-                  (change)="onSelectFile($event)"
+                  (change)="selectFiles($event)"
                   multiple
-                  accept="image/*"
-                />
-              </div>
-            </div>
+                /></button
+            ></span>
           </div>
-        </div> -->
-        <!-- <div class="row">
-          <div class="col-md-3">
-            <div class="uploadimg1">
-              <img [src]="imgURL" height="200" *ngIf="imgURL" />
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="uploadimg1">
-              <img [src]="imgURL" height="200" *ngIf="imgURL" />
-              
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="uploadimg1">
-              <img [src]="imgURL" height="200" *ngIf="imgURL" />
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="uploadimg1">
-              <img [src]="imgURL" height="200" *ngIf="imgURL" />
-            </div>
-          </div>
-          <i class="fas fa-plus-circle">
-            <input
-              class="btn"
-              type="file"
-              #file
-              accept="image/*"
-              (change)="preview(file.files)"
-              multiple
-          /></i>
-        </div> -->
+        </div>
+
         <div class="row vehicle-details-wrap">
-          <!-- <div class="col-md-4">
-            <div class="spcloffer">
-              <input
-                #file
-                type="file"
-                accept="image/*"
-                (change)="preview(file.files)"
-              />
-              <img [src]="imgURL" height="200" *ngIf="imgURL" />
-
-              <p>
-                Upload Image&nbsp;&nbsp;<i
-                  aria-hidden="true"
-                  class="fa fa-edit"
-                ></i>
-              </p>
-            </div>
-            <div class="uploadvehicle">
-              <input
-                type="file"
-                accept="image/*"
-                name="image"
-                id="file"
-                onchange="loadFile(event)"
-                style="display: none"
-                multiple
-              />
-            </div>
-          </div> -->
-
           <div class="col-md-6">
+            <div class="subhead">
+              <p>Vehicle Information:</p>
+            </div>
             <div class="offertitle">
               <input type="text" placeholder="Name" class="form-control" />
               <input type="text" placeholder="Model" class="form-control" />
@@ -754,13 +672,12 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6"></div>
-        </div>
-        <div class="row colorwrap">
-          <div class="col-md-12">
-            <div class="subhead"><p>Specifications</p></div>
+          <div class="col-md-6 colorwrap">
+            <div class="subhead">
+              <p>Specifications:</p>
+            </div>
             <div class="row">
-              <div class="col-md-3">
+              <div class="col-md-5">
                 <div class="specifications">
                   <p>True Range :</p>
                   <p>Peak Power :</p>
@@ -770,7 +687,7 @@
                   <p>Usable Capacity :</p>
                 </div>
               </div>
-              <div class="col-md-9">
+              <div class="col-md-7">
                 <div class="units">
                   <input type="text" class="form-control spec" /><span>Km</span>
                 </div>
@@ -808,10 +725,10 @@
         </div>
       </div>
       <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save</button>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">
           Close
         </button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>

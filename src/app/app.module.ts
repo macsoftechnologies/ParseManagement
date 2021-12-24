@@ -12,6 +12,7 @@ import { StockManagementComponent } from './stock-management/stock-management.co
 import { LoanManagementComponent } from './loan-management/loan-management.component';
 import { OfferManagementComponent } from './offer-management/offer-management.component';
 import { ChartsModule } from 'ng2-charts';
+import { AuthLoginComponent } from './auth-login/auth-login.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ChartsModule } from 'ng2-charts';
     StockManagementComponent,
     LoanManagementComponent,
     OfferManagementComponent,
+    AuthLoginComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ColorSketchModule, ChartsModule],
   providers: [],

@@ -13,6 +13,7 @@ import { LoanManagementComponent } from './loan-management/loan-management.compo
 import { OfferManagementComponent } from './offer-management/offer-management.component';
 import { ChartsModule } from 'ng2-charts';
 import { AuthLoginComponent } from './auth-login/auth-login.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { AuthLoginComponent } from './auth-login/auth-login.component';
     OfferManagementComponent,
     AuthLoginComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, ColorSketchModule, ChartsModule],
+  imports: [BrowserModule, AppRoutingModule, ColorSketchModule, ChartsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

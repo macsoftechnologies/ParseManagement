@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { ColorSketchModule } from 'ngx-color/sketch';
-import { ColorEvent } from 'ngx-color';
-import { FormGroup } from '@angular/forms';
+import { Component, OnInit } from '@angular/core'
+import { ColorSketchModule } from 'ngx-color/sketch'
+import { ColorEvent } from 'ngx-color'
+import { FormGroup } from '@angular/forms'
 
 @Component({
   selector: 'app-vehicle-management',
@@ -9,21 +9,21 @@ import { FormGroup } from '@angular/forms';
   styleUrls: ['./vehicle-management.component.scss'],
 })
 export class VehicleManagementComponent implements OnInit {
-  show: any;
-  hide: any;
+  show: any
+  hide: any
 
   constructor() {}
 
   ngOnInit(): void {
-    this.show = true;
-    this.hide = false;
+    this.show = true
+    this.hide = false
   }
   hide1() {
-    this.show = false;
-    this.hide = true;
+    this.show = false
+    this.hide = true
   }
   handleChange($event: ColorEvent) {
-    console.log($event.color);
+    console.log($event.color)
     // color = {
     //   hex: '#333',
     //   rgb: {
@@ -96,26 +96,25 @@ export class VehicleManagementComponent implements OnInit {
   // }
 
   // urls: any;
-  urls: any[] = [];
-  index: any;
-  imageDeleteFrom!: FormGroup;
-  imagePath: any;
-  RemoveImage: boolean = false;
+  urls: any[] = []
+  index: any
+  imageDeleteFrom!: FormGroup
+  imagePath: any
+  RemoveImage: boolean = false
 
   selectFiles(event: any) {
     if (event.target.files) {
       for (var i = 0; i < File.length; i++) {
-        var reader = new FileReader();
-        reader.readAsDataURL(event.target.files[i]);
+        var reader = new FileReader()
+        reader.readAsDataURL(event.target.files[i])
         reader.onload = (event: any) => {
-          this.urls.push(event.target.result);
-          this.RemoveImage = true;
-        };
+          this.urls.push(event.target.result)
+          this.RemoveImage = true
+        }
       }
-    } else this.RemoveImage = false;
+    } else this.RemoveImage = false
   }
   removeSelectedFile(index: any) {
-    this.urls.splice(index, 1);
+    this.urls.splice(index, 1)
   }
-  
 }

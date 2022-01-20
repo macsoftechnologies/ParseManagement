@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  baseUrl : 'https://parseadm.herokuapp.com/api/v1/'
-};
+  baseUrl: 'https://parseadm.herokuapp.com/',
+}
 
 /*
  * For easier debugging in development mode, you can import the following file

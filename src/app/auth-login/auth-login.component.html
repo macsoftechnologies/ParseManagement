@@ -1,2 +1,92 @@
+<section class="wrapper">
+  <div class="container-fluid contact-section">
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+              <div class="form-wrap">
+                <form [formGroup]="LoginForm">
+                  <div class="form-group-wrap">
+                    <h4>Welcome to your Account</h4>
+                    <div class="form-group">
+                      <label>
+                        E-mail / Mobile Number
+                        <sup>
+                          <i class="fa fa-asterisk" aria-hidden="true"></i>
+                        </sup>
+                      </label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="Email"
+                        formControlName="Email"
+                      />
+                      <!-- <span
+                        class="error"
+                        *ngIf="
+                          (LoginForm.get('Email').invalid &&
+                            LoginForm.get('Email').touched) ||
+                          (LoginForm.get('Email').pristine && hasError)
+                        "
+                      >
+                        Please enter your Valid Email Address
+                      </span> -->
+                    </div>
+                    <div class="form-group">
+                      <label>
+                        Password
+                        <sup>
+                          <i class="fa fa-asterisk" aria-hidden="true"></i>
+                        </sup>
+                      </label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="password"
+                        formControlName="password"
+                      />
+                      <!-- <span
+                        class="error"
+                        *ngIf="
+                          (LoginForm.get('password').invalid &&
+                            LoginForm.get('password').touched) ||
+                          (LoginForm.get('password').pristine && hasError)
+                        "
+                      >
+                        This field is required
+                      </span> -->
+                    </div>
+                    <div class="remember">
+                      <span>
+                        <input type="checkbox" />
+                        <p>Remember me!</p>
+                      </span>
+                      <a data-toggle="modal" data-target="#exampleModal11">
+                        Forgot Your Password ?
+                      </a>
+                    </div>
 
-<section class="wrapper"><div  class="container-fluid contact-section"><div  class="container"><div  class="card"><div  class="card-body"><div  class="row"><div class="col-md-2"></div><div  class="col-md-8"><div  class="form-wrap"><form novalidate="" class="ng-untouched ng-pristine ng-invalid"><div  class="form-group-wrap"><h4>Login to your Account</h4><div class="form-group"><label>E-mail / Mobile Number<sup ><i  aria-hidden="true" class="fa fa-asterisk"></i></sup></label><input type="text" id="Email" formcontrolname="Email" class="form-control ng-untouched ng-pristine ng-invalid"><!----></div><div _ngcontent-ase-c38="" class="form-group"><label _ngcontent-ase-c38="">Password<sup _ngcontent-ase-c38=""><i _ngcontent-ase-c38="" aria-hidden="true" class="fa fa-asterisk"></i></sup></label><input _ngcontent-ase-c38="" type="password" id="password" formcontrolname="password" class="form-control ng-untouched ng-pristine ng-invalid"><!----></div><div _ngcontent-ase-c38="" class="remember"><span _ngcontent-ase-c38=""><input _ngcontent-ase-c38="" type="checkbox"><p _ngcontent-ase-c38="">Remember me!</p></span><a _ngcontent-ase-c38="" href="#" data-target="#pwdModal" data-toggle="modal">Forgot Your Password ?</a></div><button _ngcontent-ase-c38="" type="submit" class="btn btn-primary form-control"> login </button></div></form></div></div><div class="col-md-2"></div></div></div></div></div></div></section>
+                    <button
+                      type="submit"
+                      class="btn btn-primary form-control"
+                      (click)="signin()"
+                    >
+                      signin
+                    </button>
+                    <div class="register-page">
+                      <p>Don't have an account?</p>
+                      <a [routerLink]="['/register']">Register Here</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
